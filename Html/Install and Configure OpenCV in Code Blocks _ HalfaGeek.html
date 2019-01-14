@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+<!-- saved from url=(0088)https://importgeek.wordpress.com/2016/08/27/install-and-configure-opencv-in-code-blocks/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><iframe sandbox="allow-scripts allow-same-origin" id="307caeea86e7f61" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="./Install and Configure OpenCV in Code Blocks _ HalfaGeek_files/showad.html">
+    </iframe><iframe sandbox="allow-scripts allow-same-origin" id="292bf7b46e5aeae" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="./Install and Configure OpenCV in Code Blocks _ HalfaGeek_files/iframe.html">
+    </iframe>
+
+<meta name="viewport" content="width=device-width">
+<title>Install and Configure OpenCV in Code Blocks | HalfaGeek</title>
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="https://importgeek.wordpress.com/xmlrpc.php">
+
+<link rel="dns-prefetch" href="https://s2.wp.com/">
+<link rel="dns-prefetch" href="https://s1.wp.com/">
+<link rel="dns-prefetch" href="https://s0.wp.com/">
+<link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+<link rel="dns-prefetch" href="https://s.pubmine.com/">
+<link rel="dns-prefetch" href="https://x.bidswitch.net/">
+<link rel="dns-prefetch" href="https://static.criteo.net/">
+<link rel="dns-prefetch" href="https://ib.adnxs.com/">
+<link rel="dns-prefetch" href="https://aax.amazon-adsystem.com/">
+<link rel="dns-prefetch" href="https://bidder.criteo.com/">
+<link rel="dns-prefetch" href="https://cas.criteo.com/">
+<link rel="dns-prefetch" href="https://gum.criteo.com/">
+<link rel="dns-prefetch" href="https://ads.pubmatic.com/">
+<link rel="dns-prefetch" href="https://gads.pubmatic.com/">
+<link rel="dns-prefetch" href="https://tpc.googlesyndication.com/">
+<link rel="dns-prefetch" href="https://ad.doubleclick.net/">
+<link rel="dns-prefetch" href="https://googleads.g.doubleclick.net/">
+<link rel="dns-prefetch" href="https://www.googletagservices.com/">
+<link rel="dns-prefetch" href="https://cdn.switchadhub.com/">
+<link rel="dns-prefetch" href="https://delivery.g.switchadhub.com/">
+<link rel="dns-prefetch" href="https://delivery.swid.switchadhub.com/">
+<link rel="alternate" type="application/rss+xml" title="HalfaGeek » Feed" href="https://importgeek.wordpress.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="HalfaGeek » Comments Feed" href="https://importgeek.wordpress.com/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="HalfaGeek » Install and Configure OpenCV in Code Blocks Comments Feed" href="https://importgeek.wordpress.com/2016/08/27/install-and-configure-opencv-in-code-blocks/feed/">
+	<script src="./Install and Configure OpenCV in Code Blocks _ HalfaGeek_files/client.js.下載" async="" type="text/javascript"></script><script type="text/javascript">
+		/* <![CDATA[ */
+		function addLoadEvent(func) {
+			var oldonload = window.onload;
+			if (typeof window.onload != 'function') {
+				window.onload = func;
+			} else {
+				window.onload = function () {
+					oldonload();
+					func();
+				}
+			}
+		}
+		/* ]]> */
+	</script>
+			<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/s2.wp.com\/wp-includes\/js\/wp-emoji-release.min.js?m=1532082729h&ver=5.0.3"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="./Install and Configure OpenCV in Code Blocks _ HalfaGeek_files/wp-emoji-release.min.js.下載" type="text/javascript" defer=""></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel="stylesheet" id="all-css-0-1" href="./Install and Configure OpenCV in Code Blocks _ HalfaGeek_files/saved_resource(1)" type="text/css" media="all">
+<link rel="stylesheet" id="zoren-bitter-css" href="./Install and Configure OpenCV in Code Blocks _ HalfaGeek_files/css" type="text/css" media="all">
+<link rel="stylesheet" id="zoren-open-sans-css" href="./Install and Configure OpenCV in Code Blocks _ HalfaGeek_files/css(1)" type="text/css" media="all">
+<link rel="stylesheet" id="all-css-4-1" href="./Install and Configure OpenCV in Code Blocks _ HalfaGeek_files/saved_resource(2)" type="text/css" media="all">
+<link rel="stylesheet" id="print-css-5-1" href="./Install and Configure OpenCV in Code Blocks _ HalfaGeek_files/global-print.css" type="text/css" media="print">
+<link rel="stylesheet" id="all-css-6-1" href="./Install and Configure OpenCV in Code Blocks _ HalfaGeek_files/saved_resource(3)" type="text/css" media="all">
+<script type="text/javascript">
+/* <![CDATA[ */
+var related_posts_js_options = {"post_heading":"h4"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Install and Configure OpenCV in Code Blocks _ HalfaGeek_files/saved_resource(4)"></script>
+<link rel="stylesheet" id="all-css-0-2" href="./Install and Configure OpenCV in Code Blocks _ HalfaGeek_files/style.css" type="text/css" media="all">
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='highlander-comments-ie7-css'  href='https://s2.wp.com/wp-content/mu-plugins/highlander-comments/style-ie7.css?m=1351637563h&#038;ver=20110606' type='text/css' media='all' />
+<![endif]-->
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://importgeek.wordpress.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://s1.wp.com/wp-includes/wlwmanifest.xml"> 
+<link rel="prev" title="Syncing Heroku and GitHub repos" href="https://importgeek.wordpress.com/2016/07/25/syncing-heroku-and-github-repos/">
+<link rel="next" title="Copy Large amount of data using rsync" href="https://importgeek.wordpress.com/2016/10/31/copy-large-amount-of-data-using-rsync/">
+<meta name="generator" content="WordPress.com">
+<link rel="canonical" href="https://importgeek.wordpress.com/2016/08/27/install-and-configure-opencv-in-code-blocks/">
+<link rel="shortlink" href="https://wp.me/pJi6g-jx">
+<link rel="alternate" type="application/json+oembed" href="https://public-api.wordpress.com/oembed/?format=json&amp;url=https%3A%2F%2Fimportgeek.wordpress.com%2F2016%2F08%2F27%2Finstall-and-configure-opencv-in-code-blocks%2F&amp;for=wpcom-auto-discovery"><link rel="alternate" type="application/xml+oembed" href="https://public-api.wordpress.com/oembed/?format=xml&amp;url=https%3A%2F%2Fimportgeek.wordpress.com%2F2016%2F08%2F27%2Finstall-and-configure-opencv-in-code-blocks%2F&amp;for=wpcom-auto-discovery">
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="Install and Configure OpenCV in Code Blocks">
+<meta property="og:url" content="https://importgeek.wordpress.com/2016/08/27/install-and-configure-opencv-in-code-blocks/">
+<meta property="og:description" content="First install dependency packages Install Code Blocks IDE sudo apt-get install codeblocks Required packages sudo apt-get install build-essential sudo apt-get install cmake git libgtk2.0-dev pkg-con…">
+<meta property="article:published_time" content="2016-08-27T19:45:05+00:00">
+<meta property="article:modified_time" content="2016-09-18T17:51:23+00:00">
+<meta property="og:site_name" content="HalfaGeek">
+<meta property="og:image" content="https://importgeek.files.wordpress.com/2016/08/screenshot-from-2016-08-02-234546.png">
+<meta property="og:image:width" content="1366">
+<meta property="og:image:height" content="768">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:site" content="@wordpressdotcom">
+<meta name="twitter:text:title" content="Install and Configure OpenCV in Code Blocks">
+<meta name="twitter:card" content="summary">
+<meta property="fb:app_id" content="249643311490">
+<meta property="article:publisher" content="https://www.facebook.com/WordPresscom">
+
+<!-- End Jetpack Open Graph Tags -->
+<link rel="shortcut icon" type="image/x-icon" href="https://s1.wp.com/i/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="icon" type="image/x-icon" href="https://s1.wp.com/i/favicon.ico" sizes="16x16 24x24 32x32 48x48">
+<link rel="apple-touch-icon-precomposed" href="https://s2.wp.com/i/webclip.png">
+<link rel="openid.server" href="https://importgeek.wordpress.com/?openidserver=1">
+<link rel="openid.delegate" href="https://importgeek.wordpress.com/">
+<link rel="search" type="application/opensearchdescription+xml" href="https://importgeek.wordpress.com/osd.xml" title="HalfaGeek">
+<link rel="search" type="application/opensearchdescription+xml" href="https://s1.wp.com/opensearch.xml" title="WordPress.com">
+<meta name="application-name" content="HalfaGeek"><meta name="msapplication-window" content="width=device-width;height=device-height"><meta name="msapplication-task" content="name=Subscribe;action-uri=https://importgeek.wordpress.com/feed/;icon-uri=https://s1.wp.com/i/favicon.ico"><meta name="msapplication-task" content="name=Sign up for a free blog;action-uri=http://wordpress.com/signup/;icon-uri=https://s1.wp.com/i/favicon.ico"><meta name="msapplication-task" content="name=WordPress.com Support;action-uri=http://support.wordpress.com/;icon-uri=https://s1.wp.com/i/favicon.ico"><meta name="msapplication-task" content="name=WordPress.com Forums;action-uri=http://forums.wordpress.com/;icon-uri=https://s1.wp.com/i/favicon.ico"><meta name="description" content="First install dependency packages Install Code Blocks IDE sudo apt-get install codeblocks Required packages sudo apt-get install build-essential sudo apt-get install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev Optional packages sudo apt-get install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev libdc1394-22-dev Clone the latest OpenCV from github git clone https://github.com/opencv/opencv.git Compile and Install cd…">
+<style type="text/css" id="custom-background-css">
+body.custom-background { background-image: url("https://s2.wp.com/wp-content/themes/pub/zoren/images/body.png"); background-position: left top; background-size: auto; background-repeat: repeat; background-attachment: scroll; }
+</style>
+			<script type="text/javascript">
+		function __ATA_CC() {var v = document.cookie.match('(^|;) ?personalized-ads-consent=([^;]*)(;|$)');return v ? 1 : 0;}
+		var __ATA_PP = { pt: 1, ht: 0, tn: 'zoren', amp: false, siteid: 8982, consent: __ATA_CC() };
+		var __ATA = __ATA || {};
+		__ATA.cmd = __ATA.cmd || [];
+		__ATA.criteo = __ATA.criteo || {};
+		__ATA.criteo.cmd = __ATA.criteo.cmd || [];
+		</script>
+		<script type="text/javascript" src="./Install and Configure OpenCV in Code Blocks _ HalfaGeek_files/head.js.下載" async=""></script><link rel="amphtml" href="https://importgeek.wordpress.com/2016/08/27/install-and-configure-opencv-in-code-blocks/amp/"><style type="text/css" id="syntaxhighlighteranchor"></style>
+<script type="text/javascript">
+	window.google_analytics_uacct = "UA-52447-2";
+</script>
+
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-52447-2']);
+	_gaq.push(['_setDomainName', 'wordpress.com']);
+	_gaq.push(['_initData']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+	})();
+</script><script type="text/javascript" async="" src="./Install and Configure OpenCV in Code Blocks _ HalfaGeek_files/ga.js.下載"></script>
+<style type="text/css"></style><link rel="stylesheet" type="text/css" id="gravatar-card-css" href="./Install and Configure OpenCV in Code Blocks _ HalfaGeek_files/hovercard.min.css"><link rel="stylesheet" type="text/css" id="gravatar-card-services-css" href="./Install and Configure OpenCV in Code Blocks _ HalfaGeek_files/services.min.css"><style type="text/css">.adtags-stiky-ad {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: #8a8a8f;
+    z-index: 16777271;
+    box-shadow: 0 1px 4px 0 rgba(51, 51, 51, 0.25), 0 0 1px 0 rgba(200, 199, 204, 0.5);
+}
+
+.adtags-stiky-ad__slot {
+    margin: 0 auto;
+}
+
+.adtags-sticky-ad__swipe-area {
+    width: 76px;
+    height: 36px;
+    position: absolute;
+    left: 50%;
+    bottom: -28px;
+    margin-left: -36px;
+}
+
+.adtags-stiky-ad__control {
+    width: 56px;
+    height: 16px;
+    top: 8px;
+    background-color: #8a8a8f;
+    position: absolute;
+    left: 50%;
+    margin-left: -28px;
+    border-bottom-right-radius: 24px;
+    border-bottom-left-radius: 24px;
+    box-shadow: 0 1px 1px 0 rgba(51, 51, 51, 0.25);
+}
+
+.adtags-stiky-ad_hidden {
+    display: none;
+}
+
+.adtags-stiky-ad__control {
+    cursor: pointer;
+}
+
+.adtags-stiky-ad__arrow {
+    position: absolute;
+    top: 6px;
+    left: 50%;
+    width: 13px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 1px;
+    animation: 1s
+}
+
+.adtags-stiky-ad__arrow_left {
+    margin-left: -12px;
+}
+
+.adtags-stiky-ad__arrow_right {
+    margin-left: -1px;
+}
+
+@keyframes adtags-move-left-arrow-down {
+    from {transform: rotate(0deg)}
+    to {transform: rotate(-25deg);}
+}
+
+@keyframes adtags-move-right-arrow-down {
+    from {transform: rotate(0deg)}
+    to {transform: rotate(25deg);}
+}
+
+@keyframes adtags-move-left-arrow-up {
+    from {transform: rotate(0deg)}
+    to {transform: rotate(25deg);}
+}
+
+@keyframes adtags-move-right-arrow-up {
+    from {transform: rotate(0deg)}
+    to {transform: rotate(-25deg);}
+}
+
+@media (min-width: 960px) {
+    .adtags-stiky-ad_opened .adtags-stiky-ad__control:hover .adtags-stiky-ad__arrow_left {
+        animation: adtags-move-left-arrow-down .5s;
+        transform: rotate(-25deg);
+    }
+    
+    .adtags-stiky-ad_opened .adtags-stiky-ad__control:hover .adtags-stiky-ad__arrow_right {
+        animation: adtags-move-right-arrow-down .5s;
+        transform: rotate(25deg);
+    }
+    
+    .adtags-stiky-ad_closed .adtags-stiky-ad__control:hover .adtags-stiky-ad__arrow_left {
+        animation: adtags-move-left-arrow-up .5s;
+        transform: rotate(25deg);
+    }
+    
+    .adtags-stiky-ad_closed .adtags-stiky-ad__control:hover .adtags-stiky-ad__arrow_right {
+        animation: adtags-move-right-arrow-up .5s;
+        transform: rotate(-25deg);
+    }
+}
+</style><style>[touch-action="none"]{ -ms-touch-action: none; touch-action: none; }
+body /shadow-deep/ [touch-action="none"]{ -ms-touch-action: none; touch-action: none; }
+[touch-action="auto"]{ -ms-touch-action: auto; touch-action: auto; }
+body /shadow-deep/ [touch-action="auto"]{ -ms-touch-action: auto; touch-action: auto; }
+[touch-action="pan-x"]{ -ms-touch-action: pan-x; touch-action: pan-x; }
+body /shadow-deep/ [touch-action="pan-x"]{ -ms-touch-action: pan-x; touch-action: pan-x; }
+[touch-action="pan-y"]{ -ms-touch-action: pan-y; touch-action: pan-y; }
+body /shadow-deep/ [touch-action="pan-y"]{ -ms-touch-action: pan-y; touch-action: pan-y; }
+[touch-action="pan-x pan-y"],[touch-action="pan-y pan-x"]{ -ms-touch-action: pan-x pan-y; touch-action: pan-x pan-y; }
+body /shadow-deep/ [touch-action="pan-x pan-y"],body /shadow-deep/ [touch-action="pan-y pan-x"]{ -ms-touch-action: pan-x pan-y; touch-action: pan-x pan-y; }
+</style><style type="text/css">.ata-controls {
+    text-align: right;
+    line-height: 10px;
+    height: 10px;
+}
+
+.ata-controls__complain-btn {
+    font-size: 6px;
+    vertical-align: middle;
+    font-family: Verdana, sans-serif;
+    color: #c8c7cc;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    cursor: pointer;
+}
+
+.ata-controls__complain-btn:hover {
+    color: #666666;
+}
+.ata-controls__complain-btn:active {
+    color: #5ac8fa;
+}
+
+.ata-controls__complain-btn_clicked,
+.ata-controls__complain-btn_clicked:hover,
+.ata-controls__complain-btn_clicked:active {
+    color: #000;
+    cursor: default;
+}
+</style><script src="./Install and Configure OpenCV in Code Blocks _ HalfaGeek_files/hbconf"></script><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#1d3c78;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}</style><script src="./Install and Configure OpenCV in Code Blocks _ HalfaGeek_files/saved_resource(5)" type="text/javascript" async=""></script><script src="./Install and Configure OpenCV in Code Blocks _ HalfaGeek_files/saved_resource(6)" type="text/javascript" async=""></script><script src="./Install and Configure OpenCV in Code Blocks _ HalfaGeek_files/outstream.js.下載"></script><style type="text/css">
+.iowo-adv {
+   overflow: hidden;
+}
+.iowo-adv__header {
+   font-family: "Helvetica", Arial, sans-serif !important;
+   font-size: 11.5px !important;
+   text-align: center;
+   position: relative;
+   padding: 5px 0px;
+   letter-spacing: 0.3px !important;
+   font-weight: 300 !important;
+   text-transform: uppercase;
+   color: #aaa;
+}
+.iowo-adv__close-icon {
+   width: 24px;
+   height: 24px;
+   position: absolute;
+   right: 10px;
+   top: 34px;
+   z-index:10;
+   cursor: pointer;
+   background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAA3XAAAN1wFCKJt4AAAAB3RJTUUH4gMQDS4lyDpzXgAAAKlJREFUWMPVV1sOgCAMo9yZU3Bo/THGRKaylTXuF9YW9mCgtbaVw3rvKAl25azWQgb5TcBqESNsWAvscFgceNuwkvy8gZUi3jAx68AkHwpgifiKgShA1BcsIK8PmKfxCKZdqTdkYCRVJF/CmT2ymYoBo7Yj5UprMN6GVYvY/hUCaRJKy1DaiKStWPoYSZ9j6UAiHcmkQ6l0LJd+TDLIn0TULHILu2aRWxw7NqDQ4pqt7KcAAAAASUVORK5CYII=");
+   background-size: contain;
+}
+.iowo-adv__close-icon_touch {
+   left: 10px;
+}
+.iowo-adv__sound-icon {
+   width: 32px;
+   cursor: pointer;
+   height: 32px;
+   position: absolute;
+   bottom:12px;
+   right:5px;
+   z-index:10;
+}
+.iowo-adv__sound-icon_on {
+   background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4QYcDigM2jawiwAAAbhJREFUWMPtl7FLHFEQxr+ZtwTytLDwmjSnhf+AYrpUBwGvS7F2YqFNQNjieCnsTlPscdxdZ2MVCORIEewMwf/AlEkRCRaSKqQMCrnbGZtVLPRye2/dJcSpdos33292vjfvLfAQ/3tQHkkajcYqM68YY3bjOD7NsjbwFXfOhSLyDgAPBgMBsJFlPXuK10TkLTNf5ZnKmoM9PvuSqh4w8yOfInjCyhcAHBLRtG8LeQLxJyLyiZkreRg4E0AURTOq+pGZ5/LahsEodwN4A+Dxfc6BUdsw9BF3zkWqOq2q+51O5+ckLWDP4p4R0Wtm/uqcW7wvkXFiVkT6YRiaQgGGw+Gaqn4AAGZeqFarTwsF6PV6F0R0eH3oEFUKBXDO1QBsX70bY74U7YGXAObT5/5dp2QRJuyLyGbmOaCq50Re14XYGPPqb/eDOwGCINhJkkRvHrGqOkNEtXHU2+32Z69JGMfxdwDrt5hrL+1vLpHZA9baLQDvSwNoNptirV0DcFQKQArxx1r7AsBxKQApxO8kSeoi8q0UAADodru/giB4LiI/0pl/UigAALRarTMiWhaRurV25+FX65+LSxNniSadskJNAAAAAElFTkSuQmCC");
+}
+.iowo-adv__sound-icon_off {
+   background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAAAdBJREFUWIXt1b9r1GAcx/HP840u94jo6mD/Aae24I9NHZSCi5NDO5TO7fLkCTgdt15y4C6IdHFwEpxscRHc1dHB0UFBOvToks/Xxch53j3JExNB6XcMz+X1Ti5PApzO/zLD4fBMm99JF7hzbm86nZ6kafp02Rrv/apz7mrnAd77LRF5BCBR1fvLcJKHIvIqy7JrnQV47zdIPgFgAEBEfjvfDH4RwHmSW50EZFl2g+RzEfn535P8FsABYN9au/vHAc65K2VZvhSRwQz+JUmSjRA+GAy2R6MRZ89lWuArAN6KyKU5/PZ4PP4QgwNAcOs4524ZYy7/UmzMQwBLcefcGsmDJjgQuAPe+5sAXocCF+EAGuNA4BlQ1ZW+8WDA38BbBXSJRwfU4SSnMThQswvqcBE5BHChWiMiGoMDDe9AE7zt1Ab0idcG9I0HA0i+6xsHGn4LvPfrAA4a4Md5np+LCah9BuZxVX1G8mMM0jpgwZXvW2s3AdwB8LnXgEV49ZKZTCafVPUuyaNeAkJ4taYoivcico/kSacBTfBq8jx/Y4x5AKD8caicXxMdoKpnSSZ1eDVFUbwwxuwA+Kqqj2MDFm7DNE2vA9i01u7GvttP55+b71U6NuXe6u9vAAAAAElFTkSuQmCC");
+}
+.iowo-adv__timer {
+   position: absolute;
+   bottom:5px;
+   left:5px;
+   min-width: 60px;
+   padding: 3px;
+   color: #aaaaaa;
+   border-radius: 5px;
+   font-family: sans-serif;
+   text-align: center;
+   background-color:black;
+   z-index:10;
+}
+.iowo-timeline {
+   position: absolute;
+   bottom:0;
+   left:0;
+   width: 100%;
+   height: 5px;
+   background-color: rgba(0, 0, 0, 0.2);
+   z-index:10;
+}
+.iowo-timeline__runner {
+   position: relative;
+   height: 5px;
+   background-color: red;
+   -moz-transition: .5s;
+   -ms-transition: .5s;
+   -o-transition: .5s;
+   -webkit-transition: .5s;
+   transition: .5s;
+   transition-property: max-width;
+}</style><script src="./Install and Configure OpenCV in Code Blocks _ HalfaGeek_files/ima3.js.下載"></script><link rel="preload" href="./Install and Configure OpenCV in Code Blocks _ HalfaGeek_files/f(4).txt" as="script"><script type="text/javascript" src="./Install and Configure OpenCV in Code Blocks _ HalfaGeek_files/f(4).txt"></script></head>
+
+<body class="post-template-default single single-post postid-1211 single-format-standard custom-background mp6 customizer-styles-applied highlander-enabled highlander-light">
+<div id="page" class="hfeed site">
+		<header id="masthead" class="site-header" role="banner">
+		<div class="site-branding">
+			<h1 class="site-title"><a href="https://importgeek.wordpress.com/" title="HalfaGeek" rel="home">HalfaGeek</a></h1>
+			<h2 class="site-description"></h2>
+		</div>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<h1 class="menu-toggle">Menu</h1>
+			<div class="screen-reader-text skip-link"><a href="https://importgeek.wordpress.com/2016/08/27/install-and-configure-opencv-in-code-blocks/#content" title="Skip to content">Skip to content</a></div>
+
+			<div class="menu"><ul class=" nav-menu">
+<li><a href="https://importgeek.wordpress.com/">Home</a></li><li class="page_item page-item-2"><a href="https://importgeek.wordpress.com/about/">About</a></li>
+</ul></div>
+		</nav><!-- #site-navigation -->
+	</header><!-- #masthead -->
+
+	
+	<div id="main" class="site-main">
+	<div id="primary" class="content-area">
+		<div id="content" class="site-content" role="main">
+
+		
+			
+<article id="post-1211" class="post-1211 post type-post status-publish format-standard hentry category-ubuntu tag-codeblocks tag-opencv tag-ubuntu">
+
+		<div class="entry-meta clear">
+
+					<span class="entry-format-badge genericon genericon-standard"><span class="screen-reader-text">Standard</span></span>
+		
+		<div class="author-meta ">
+			<p>Posted by</p>
+			<span><a href="https://importgeek.wordpress.com/author/ganeshredcobra/" title="Posts by ganeshredcobra" rel="author">ganeshredcobra</a></span>
+		</div>
+		<div class="clock-meta">
+			<p>Posted on</p>
+			<span><a href="https://importgeek.wordpress.com/2016/08/27/" rel="bookmark" title="7:45 pm">August 27, 2016</a></span>
+		</div>
+		<div class="category-meta">
+			<p>Posted under</p>
+			<span> <a href="https://importgeek.wordpress.com/category/ubuntu/" rel="category tag">Ubuntu</a></span>
+		</div>
+
+				<div class="discussion-meta">
+			<p>Comments</p>
+			<span><a href="https://importgeek.wordpress.com/2016/08/27/install-and-configure-opencv-in-code-blocks/#comments">5 Comments</a></span>
+		</div>
+			</div><!-- .entry-meta -->
+	
+	<h1 class="entry-title">Install and Configure OpenCV in Code&nbsp;Blocks</h1>
+	<div class="entry-content clear">
+		<p>First install dependency packages</p>
+<p>Install Code Blocks IDE</p>
+<pre>sudo apt-get install codeblocks
+</pre>
+<p>Required packages</p>
+<pre>sudo apt-get install build-essential
+sudo apt-get install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
+</pre>
+<p>Optional packages</p>
+<pre>sudo apt-get install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev libdc1394-22-dev
+</pre>
+<p>Clone the latest OpenCV from github</p>
+<pre>git clone <span class="skimlinks-unlinked">https://github.com/opencv/opencv.git</span>
+</pre>
+<p>Compile and Install</p>
+<pre>cd ~/opencv
+mkdir release
+cd release
+cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local ..
+make
+</pre>
+<p>For using with QT and OpenGL and for sample code snippets use this cmake</p>
+<pre>cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D WITH_TBB=ON -D BUILD_NEW_PYTHON_SUPPORT=ON -D WITH_V4L=ON -D INSTALL_C_EXAMPLES=ON -D INSTALL_PYTHON_EXAMPLES=ON -D BUILD_EXAMPLES=ON -D WITH_QT=ON -D WITH_OPENGL=ON ..
+</pre>
+<p><a href="https://importgeek.wordpress.com/2016/08/27/install-and-configure-opencv-in-code-blocks/screenshot-from-2016-08-02-234546/#main" rel="attachment wp-att-1215" class="single-image-gallery"><img data-attachment-id="1215" data-permalink="https://importgeek.wordpress.com/2016/08/27/install-and-configure-opencv-in-code-blocks/screenshot-from-2016-08-02-234546/#main" data-orig-file="https://importgeek.files.wordpress.com/2016/08/screenshot-from-2016-08-02-234546.png?w=800&amp;h=450" data-orig-size="1366,768" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Screenshot from 2016-08-02 23:45:46" data-image-description="" data-medium-file="https://importgeek.files.wordpress.com/2016/08/screenshot-from-2016-08-02-234546.png?w=800&amp;h=450?w=300" data-large-file="https://importgeek.files.wordpress.com/2016/08/screenshot-from-2016-08-02-234546.png?w=800&amp;h=450?w=800" class="aligncenter size-full wp-image-1215" src="./Install and Configure OpenCV in Code Blocks _ HalfaGeek_files/screenshot-from-2016-08-02-234546.png" alt="Screenshot from 2016-08-02 23:45:46" width="800" height="450" srcset="https://importgeek.files.wordpress.com/2016/08/screenshot-from-2016-08-02-234546.png?w=800&amp;h=450 800w, https://importgeek.files.wordpress.com/2016/08/screenshot-from-2016-08-02-234546.png?w=150&amp;h=84 150w, https://importgeek.files.wordpress.com/2016/08/screenshot-from-2016-08-02-234546.png?w=300&amp;h=169 300w, https://importgeek.files.wordpress.com/2016/08/screenshot-from-2016-08-02-234546.png?w=768&amp;h=432 768w, https://importgeek.files.wordpress.com/2016/08/screenshot-from-2016-08-02-234546.png?w=1024&amp;h=576 1024w, https://importgeek.files.wordpress.com/2016/08/screenshot-from-2016-08-02-234546.png 1366w" sizes="(max-width: 800px) 100vw, 800px"></a></p>
+<p>&nbsp;<br>
+<img data-attachment-id="1216" data-permalink="https://importgeek.wordpress.com/2016/08/27/install-and-configure-opencv-in-code-blocks/screenshot-from-2016-08-03-001729/#main" data-orig-file="https://importgeek.files.wordpress.com/2016/08/screenshot-from-2016-08-03-001729.png?w=800&amp;h=450" data-orig-size="1366,768" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Screenshot from 2016-08-03 00:17:29" data-image-description="" data-medium-file="https://importgeek.files.wordpress.com/2016/08/screenshot-from-2016-08-03-001729.png?w=800&amp;h=450?w=300" data-large-file="https://importgeek.files.wordpress.com/2016/08/screenshot-from-2016-08-03-001729.png?w=800&amp;h=450?w=800" class="aligncenter size-full wp-image-1216" src="./Install and Configure OpenCV in Code Blocks _ HalfaGeek_files/screenshot-from-2016-08-03-001729.png" alt="Screenshot from 2016-08-03 00:17:29" width="800" height="450" srcset="https://importgeek.files.wordpress.com/2016/08/screenshot-from-2016-08-03-001729.png?w=800&amp;h=450 800w, https://importgeek.files.wordpress.com/2016/08/screenshot-from-2016-08-03-001729.png?w=150&amp;h=84 150w, https://importgeek.files.wordpress.com/2016/08/screenshot-from-2016-08-03-001729.png?w=300&amp;h=169 300w, https://importgeek.files.wordpress.com/2016/08/screenshot-from-2016-08-03-001729.png?w=768&amp;h=432 768w, https://importgeek.files.wordpress.com/2016/08/screenshot-from-2016-08-03-001729.png?w=1024&amp;h=576 1024w, https://importgeek.files.wordpress.com/2016/08/screenshot-from-2016-08-03-001729.png 1366w" sizes="(max-width: 800px) 100vw, 800px"></p>
+<pre>sudo make install
+</pre>
+<p><a href="https://importgeek.wordpress.com/2016/08/27/install-and-configure-opencv-in-code-blocks/screenshot-from-2016-08-03-001758/#main" rel="attachment wp-att-1217" class="single-image-gallery"><img data-attachment-id="1217" data-permalink="https://importgeek.wordpress.com/2016/08/27/install-and-configure-opencv-in-code-blocks/screenshot-from-2016-08-03-001758/#main" data-orig-file="https://importgeek.files.wordpress.com/2016/08/screenshot-from-2016-08-03-001758.png?w=800&amp;h=450" data-orig-size="1366,768" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Screenshot from 2016-08-03 00:17:58" data-image-description="" data-medium-file="https://importgeek.files.wordpress.com/2016/08/screenshot-from-2016-08-03-001758.png?w=800&amp;h=450?w=300" data-large-file="https://importgeek.files.wordpress.com/2016/08/screenshot-from-2016-08-03-001758.png?w=800&amp;h=450?w=800" class="aligncenter size-full wp-image-1217" src="./Install and Configure OpenCV in Code Blocks _ HalfaGeek_files/screenshot-from-2016-08-03-001758.png" alt="Screenshot from 2016-08-03 00:17:58" width="800" height="450" srcset="https://importgeek.files.wordpress.com/2016/08/screenshot-from-2016-08-03-001758.png?w=800&amp;h=450 800w, https://importgeek.files.wordpress.com/2016/08/screenshot-from-2016-08-03-001758.png?w=150&amp;h=84 150w, https://importgeek.files.wordpress.com/2016/08/screenshot-from-2016-08-03-001758.png?w=300&amp;h=169 300w, https://importgeek.files.wordpress.com/2016/08/screenshot-from-2016-08-03-001758.png?w=768&amp;h=432 768w, https://importgeek.files.wordpress.com/2016/08/screenshot-from-2016-08-03-001758.png?w=1024&amp;h=576 1024w, https://importgeek.files.wordpress.com/2016/08/screenshot-from-2016-08-03-001758.png 1366w" sizes="(max-width: 800px) 100vw, 800px"></a></p>
+<p>Now open <span class="skimlinks-unlinked">CodeBlocks.Now</span> go to settings –&gt;compiler<br>
+Under the compiler settings tab select the other options tab and copy the following command into the pane.</p>
+<pre>`pkg-config opencv --cflags`
+</pre>
+<p><a href="https://importgeek.wordpress.com/2016/08/27/install-and-configure-opencv-in-code-blocks/screenshot-from-2016-08-09-210157/#main" rel="attachment wp-att-1218" class="single-image-gallery"><img data-attachment-id="1218" data-permalink="https://importgeek.wordpress.com/2016/08/27/install-and-configure-opencv-in-code-blocks/screenshot-from-2016-08-09-210157/#main" data-orig-file="https://importgeek.files.wordpress.com/2016/08/screenshot-from-2016-08-09-210157.png?w=800&amp;h=450" data-orig-size="1366,768" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Screenshot from 2016-08-09 21:01:57" data-image-description="" data-medium-file="https://importgeek.files.wordpress.com/2016/08/screenshot-from-2016-08-09-210157.png?w=800&amp;h=450?w=300" data-large-file="https://importgeek.files.wordpress.com/2016/08/screenshot-from-2016-08-09-210157.png?w=800&amp;h=450?w=800" class="aligncenter size-full wp-image-1218" src="./Install and Configure OpenCV in Code Blocks _ HalfaGeek_files/screenshot-from-2016-08-09-210157.png" alt="Screenshot from 2016-08-09 21:01:57" width="800" height="450" srcset="https://importgeek.files.wordpress.com/2016/08/screenshot-from-2016-08-09-210157.png?w=800&amp;h=450 800w, https://importgeek.files.wordpress.com/2016/08/screenshot-from-2016-08-09-210157.png?w=150&amp;h=84 150w, https://importgeek.files.wordpress.com/2016/08/screenshot-from-2016-08-09-210157.png?w=300&amp;h=169 300w, https://importgeek.files.wordpress.com/2016/08/screenshot-from-2016-08-09-210157.png?w=768&amp;h=432 768w, https://importgeek.files.wordpress.com/2016/08/screenshot-from-2016-08-09-210157.png?w=1024&amp;h=576 1024w, https://importgeek.files.wordpress.com/2016/08/screenshot-from-2016-08-09-210157.png 1366w" sizes="(max-width: 800px) 100vw, 800px"></a></p>
+<p>Now open the Linker Settings Tab and copy the following command int the other linker options pane:</p>
+<pre>`pkg-config opencv --libs`
+</pre>
+<p><a href="https://importgeek.wordpress.com/2016/08/27/install-and-configure-opencv-in-code-blocks/screenshot-from-2016-08-09-210248/#main" rel="attachment wp-att-1219" class="single-image-gallery"><img data-attachment-id="1219" data-permalink="https://importgeek.wordpress.com/2016/08/27/install-and-configure-opencv-in-code-blocks/screenshot-from-2016-08-09-210248/#main" data-orig-file="https://importgeek.files.wordpress.com/2016/08/screenshot-from-2016-08-09-210248.png?w=800&amp;h=450" data-orig-size="1366,768" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Screenshot from 2016-08-09 21:02:48" data-image-description="" data-medium-file="https://importgeek.files.wordpress.com/2016/08/screenshot-from-2016-08-09-210248.png?w=800&amp;h=450?w=300" data-large-file="https://importgeek.files.wordpress.com/2016/08/screenshot-from-2016-08-09-210248.png?w=800&amp;h=450?w=800" class="aligncenter size-full wp-image-1219" src="./Install and Configure OpenCV in Code Blocks _ HalfaGeek_files/screenshot-from-2016-08-09-210248.png" alt="Screenshot from 2016-08-09 21:02:48" width="800" height="450" srcset="https://importgeek.files.wordpress.com/2016/08/screenshot-from-2016-08-09-210248.png?w=800&amp;h=450 800w, https://importgeek.files.wordpress.com/2016/08/screenshot-from-2016-08-09-210248.png?w=150&amp;h=84 150w, https://importgeek.files.wordpress.com/2016/08/screenshot-from-2016-08-09-210248.png?w=300&amp;h=169 300w, https://importgeek.files.wordpress.com/2016/08/screenshot-from-2016-08-09-210248.png?w=768&amp;h=432 768w, https://importgeek.files.wordpress.com/2016/08/screenshot-from-2016-08-09-210248.png?w=1024&amp;h=576 1024w, https://importgeek.files.wordpress.com/2016/08/screenshot-from-2016-08-09-210248.png 1366w" sizes="(max-width: 800px) 100vw, 800px"></a></p>
+<p>Click OK to save the settings.</p>
+<p>Happy Hacking <img draggable="false" class="emoji" alt="🙂" src="./Install and Configure OpenCV in Code Blocks _ HalfaGeek_files/1f642.svg"></p>
+<div id="atatags-370373-5c3bed269cefe">
+        <script type="text/javascript">
+            __ATA.cmd.push(function() {
+                __ATA.initVideoSlot('atatags-370373-5c3bed269cefe', {
+                    sectionId: '370373',
+                    format: 'inread'
+                });
+            });
+        </script>
+    </div>		<div class="wpcnt">
+			<div class="wpa wpmrec">
+				<span class="wpa-about">Advertisements</span>
+				<div class="u">		<div style="padding-bottom:15px;width:300px;height:250px;float:left;margin-right:5px;margin-top:0px">
+		<div id="atatags-26942-5c3bed269cf23"><div style="width: 300px; height: 250px;"><iframe frameborder="0" scrolling="no" width="300" height="250" style="margin:0;border:none;overflow:hidden;width:300px;height:250px;" src="./Install and Configure OpenCV in Code Blocks _ HalfaGeek_files/saved_resource(21).html"></iframe></div><div id="atatags-26942-5c3bed269cf23__controls" class="ata-controls" style="height:10px;width:300px;"><span id="atatags-26942-5c3bed269cf23__complain-btn" class="ata-controls__complain-btn" style="display: inline;">Report this ad</span></div></div></div>		<div style="padding-bottom:15px;width:300px;height:250px;float:left;margin-top:0px">
+		<div id="atatags-114160-5c3bed269cf25"><div style="width: 300px; height: 250px;"><iframe frameborder="0" scrolling="no" width="300" height="250" style="margin:0;border:none;overflow:hidden;width:300px;height:250px;" src="./Install and Configure OpenCV in Code Blocks _ HalfaGeek_files/saved_resource(22).html"></iframe></div><div id="atatags-114160-5c3bed269cf25__controls" class="ata-controls" style="height:10px;width:300px;"><span id="atatags-114160-5c3bed269cf25__complain-btn" class="ata-controls__complain-btn" style="display: inline;">Report this ad</span></div></div></div></div>
+				
+			</div>
+		</div><div id="jp-post-flair" class="sharedaddy sd-like-enabled"><div class="sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-loaded" id="like-post-wrapper-10794340-1211-5c3bed269db3a" data-src="//widgets.wp.com/likes/index.html?ver=20180319#blog_id=10794340&amp;post_id=1211&amp;origin=importgeek.wordpress.com&amp;obj_id=10794340-1211-5c3bed269db3a" data-name="like-post-frame-10794340-1211-5c3bed269db3a"><h3 class="sd-title">Like this:</h3><div class="likes-widget-placeholder post-likes-widget-placeholder" style="height: 55px; display: none;"><span class="button"><span>Like</span></span> <span class="loading">Loading...</span></div><iframe class="post-likes-widget jetpack-likes-widget" name="like-post-frame-10794340-1211-5c3bed269db3a" height="55px" width="100%" frameborder="0" src="./Install and Configure OpenCV in Code Blocks _ HalfaGeek_files/index.html"></iframe><span class="sd-text-color"></span><a class="sd-link-color"></a></div>
+<div id="jp-relatedposts" class="jp-relatedposts" style="display: block;">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+<div class="jp-relatedposts-items jp-relatedposts-items-minimal"><p class="jp-relatedposts-post jp-relatedposts-post0" data-post-id="508" data-post-format="false"><span class="jp-relatedposts-post-title"><a class="jp-relatedposts-post-a" href="https://importgeek.wordpress.com/2012/06/26/how-to-setup-msp430-launchpad-in-ubuntu/" title="How to setup MSP430 Launchpad in ubuntu
+
+                This will help you to set up MSP430 Launchpad in ubuntu...TI provides support only for windows.we will setup the toolchain,debugger and test ablink led c program. First install the dependencies needed $sudo apt-get install git-core gcc-4.4 texinfo patch libncurses5-dev $ sudo apt-get…" rel="nofollow" data-origin="1211" data-position="0">How to setup MSP430 Launchpad in ubuntu</a></span><span class="jp-relatedposts-post-context">In "Embedded systems"</span></p><p class="jp-relatedposts-post jp-relatedposts-post1" data-post-id="259" data-post-format="false"><span class="jp-relatedposts-post-title"><a class="jp-relatedposts-post-a" href="https://importgeek.wordpress.com/2011/12/02/installing-node-js-and-npm-on-ubuntudebian/" title="Installing Node.js and NPM on Ubuntu/Debian
+
+This is the simple way to install Node.js and npm which is needed for the installation of coco2d javascript Step 1 - Update your system sudo apt-get update sudo apt-get install git-core curl build-essential openssl libssl-dev Step 2 - Install Node.js First, clone the Node.js repository: git clone https://github.com/joyent/node.git cd…" rel="nofollow" data-origin="1211" data-position="1">Installing Node.js and NPM on Ubuntu/Debian</a></span><span class="jp-relatedposts-post-context">In "Debian"</span></p><p class="jp-relatedposts-post jp-relatedposts-post2" data-post-id="401" data-post-format="false"><span class="jp-relatedposts-post-title"><a class="jp-relatedposts-post-a" href="https://importgeek.wordpress.com/2012/04/09/compiling-qt-and-tslib-for-mini2440-and-run-a-demo-app/" title="Compiling Qt and tslib for mini2440 and run a demo app
+
+We will create a Qt app that is compatible on mini2440 on our host computer then we will copy the libraries and binary of the app to mini2440 and will run the app.... So first we need to set up the Qt environment that we have in our mini2440(Qtopia) to…" rel="nofollow" data-origin="1211" data-position="2">Compiling Qt and tslib for mini2440 and run a demo app</a></span><span class="jp-relatedposts-post-context">In "mini2440"</span></p></div></div></div>				<div class="taglist"><ul class="clear"><li><a href="https://importgeek.wordpress.com/tag/codeblocks/" rel="tag">codeblocks</a></li><li><a href="https://importgeek.wordpress.com/tag/opencv/" rel="tag">opencv</a></li><li><a href="https://importgeek.wordpress.com/tag/ubuntu/" rel="tag">Ubuntu</a></li></ul></div><!-- .entry-content -->
+
+</div></article><!-- #post-1211 -->
+				<nav role="navigation" id="nav-below" class="navigation-post clear">
+		<h1 class="screen-reader-text">Post navigation</h1>
+
+	
+		<div class="previous"><a href="https://importgeek.wordpress.com/2016/07/25/syncing-heroku-and-github-repos/" rel="prev"><span class="meta-nav">←</span> Syncing Heroku and GitHub&nbsp;repos</a></div>		<div class="next"><a href="https://importgeek.wordpress.com/2016/10/31/copy-large-amount-of-data-using-rsync/" rel="next">Copy Large amount of data using&nbsp;rsync <span class="meta-nav">→</span></a></div>
+	
+	</nav><!-- #nav-below -->
+	
+			
+
+	<div id="comments" class="comments-area">
+
+	
+			<h2 class="comments-title">
+			5 thoughts on “<span>Install and Configure OpenCV in Code&nbsp;Blocks</span>”		</h2>
+
+		
+		<ol class="commentlist">
+				<li class="comment even thread-even depth-1 clear highlander-comment" id="li-comment-1387">
+		<article id="comment-1387" class="comment">
+			<footer>
+				<div class="comment-author vcard">
+					<img alt="" src="./Install and Configure OpenCV in Code Blocks _ HalfaGeek_files/acbe8a400642de6ae342af65e2bed685" class="avatar avatar-40 grav-hashed grav-hijack" height="40" width="40" id="grav-acbe8a400642de6ae342af65e2bed685-0">					<cite class="fn">Asim</cite> <span class="says">says:</span>				</div><!-- .comment-author .vcard -->
+				
+				<div class="comment-meta commentmetadata">
+					<a href="https://importgeek.wordpress.com/2016/08/27/install-and-configure-opencv-in-code-blocks/#comment-1387"><time datetime="2017-05-25T13:05:13+00:00">
+					May 25, 2017 at 1:05 pm					</time></a>
+									</div><!-- .comment-meta .commentmetadata -->
+			</footer>
+
+			<div class="comment-content"><p>Hello thanks for this tutorial. I  did every single step. It compiled the sources ok. I followed the procedure for codeblocks but it won’t compile/link the project under codeblocks. Some help would be much appreciated. Thanks</p>
+</div>
+			<div class="reply"><a rel="nofollow" class="comment-reply-link" href="https://importgeek.wordpress.com/2016/08/27/install-and-configure-opencv-in-code-blocks/?replytocom=1387#respond" onclick="return addComment.moveForm( &quot;comment-1387&quot;, &quot;1387&quot;, &quot;respond&quot;, &quot;1211&quot; )" aria-label="Reply to Asim">Reply</a></div>		</article><!-- #comment-## -->
+
+	<ul class="children">
+	<li class="comment byuser comment-author-ganeshredcobra bypostauthor odd alt depth-2 clear highlander-comment" id="li-comment-1397">
+		<article id="comment-1397" class="comment">
+			<footer>
+				<div class="comment-author vcard">
+					<img alt="" src="./Install and Configure OpenCV in Code Blocks _ HalfaGeek_files/0e42fc1609fafe73051dd9462b54c23b.png" class="avatar avatar-40 grav-hashed grav-hijack" height="40" width="40" id="grav-0e42fc1609fafe73051dd9462b54c23b-0">					<cite class="fn">ganeshredcobra</cite> <span class="says">says:</span>				</div><!-- .comment-author .vcard -->
+				
+				<div class="comment-meta commentmetadata">
+					<a href="https://importgeek.wordpress.com/2016/08/27/install-and-configure-opencv-in-code-blocks/#comment-1397"><time datetime="2017-05-31T16:01:12+00:00">
+					May 31, 2017 at 4:01 pm					</time></a>
+									</div><!-- .comment-meta .commentmetadata -->
+			</footer>
+
+			<div class="comment-content"><p>Hi Asim, What was the issue? Can you share me the code snippet which you tried?</p>
+</div>
+			<div class="reply"><a rel="nofollow" class="comment-reply-link" href="https://importgeek.wordpress.com/2016/08/27/install-and-configure-opencv-in-code-blocks/?replytocom=1397#respond" onclick="return addComment.moveForm( &quot;comment-1397&quot;, &quot;1397&quot;, &quot;respond&quot;, &quot;1211&quot; )" aria-label="Reply to ganeshredcobra">Reply</a></div>		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1 clear highlander-comment" id="li-comment-1484">
+		<article id="comment-1484" class="comment">
+			<footer>
+				<div class="comment-author vcard">
+					<img alt="" src="./Install and Configure OpenCV in Code Blocks _ HalfaGeek_files/03f432e2aa5878503dba33f7ee41eed2" class="avatar avatar-40 grav-hashed grav-hijack" height="40" width="40" id="grav-03f432e2aa5878503dba33f7ee41eed2-0">					<cite class="fn">Marco</cite> <span class="says">says:</span>				</div><!-- .comment-author .vcard -->
+				
+				<div class="comment-meta commentmetadata">
+					<a href="https://importgeek.wordpress.com/2016/08/27/install-and-configure-opencv-in-code-blocks/#comment-1484"><time datetime="2017-10-30T14:50:01+00:00">
+					October 30, 2017 at 2:50 pm					</time></a>
+									</div><!-- .comment-meta .commentmetadata -->
+			</footer>
+
+			<div class="comment-content"><p>único que deu certo vlw!!:)</p>
+</div>
+			<div class="reply"><a rel="nofollow" class="comment-reply-link" href="https://importgeek.wordpress.com/2016/08/27/install-and-configure-opencv-in-code-blocks/?replytocom=1484#respond" onclick="return addComment.moveForm( &quot;comment-1484&quot;, &quot;1484&quot;, &quot;respond&quot;, &quot;1211&quot; )" aria-label="Reply to Marco">Reply</a></div>		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-even depth-1 clear highlander-comment" id="li-comment-1554">
+		<article id="comment-1554" class="comment">
+			<footer>
+				<div class="comment-author vcard">
+					<img alt="" src="./Install and Configure OpenCV in Code Blocks _ HalfaGeek_files/picture" class="avatar avatar-40" height="40" width="40">					<cite class="fn"><a href="https://www.facebook.com/app_scoped_user_id/1290866317656094/" rel="external nofollow" class="url">Marcel Mougenot</a></cite> <span class="says">says:</span>				</div><!-- .comment-author .vcard -->
+				
+				<div class="comment-meta commentmetadata">
+					<a href="https://importgeek.wordpress.com/2016/08/27/install-and-configure-opencv-in-code-blocks/#comment-1554"><time datetime="2018-03-07T20:48:05+00:00">
+					March 7, 2018 at 8:48 pm					</time></a>
+									</div><!-- .comment-meta .commentmetadata -->
+			</footer>
+
+			<div class="comment-content"><p>deu certo mesmooo!<br>
+Muito bom! Já tinha tentado conforme diversas indicações e só neste tutorial deu certo!<br>
+It worked!<br>
+Very good! I had tried according to several indications and only this tutorial worked!</p>
+</div>
+			<div class="reply"><a rel="nofollow" class="comment-reply-link" href="https://importgeek.wordpress.com/2016/08/27/install-and-configure-opencv-in-code-blocks/?replytocom=1554#respond" onclick="return addComment.moveForm( &quot;comment-1554&quot;, &quot;1554&quot;, &quot;respond&quot;, &quot;1211&quot; )" aria-label="Reply to Marcel Mougenot">Reply</a></div>		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1 clear highlander-comment" id="li-comment-1562">
+		<article id="comment-1562" class="comment">
+			<footer>
+				<div class="comment-author vcard">
+					<img alt="" src="./Install and Configure OpenCV in Code Blocks _ HalfaGeek_files/d764a8e295bf5ba0ab43a19cbbb873bf" class="avatar avatar-40 grav-hashed grav-hijack" height="40" width="40" id="grav-d764a8e295bf5ba0ab43a19cbbb873bf-0">					<cite class="fn"><a href="https://herohuntersguide.wordpress.com/" rel="external nofollow" class="url">Hero Hunters hack</a></cite> <span class="says">says:</span>				</div><!-- .comment-author .vcard -->
+				
+				<div class="comment-meta commentmetadata">
+					<a href="https://importgeek.wordpress.com/2016/08/27/install-and-configure-opencv-in-code-blocks/#comment-1562"><time datetime="2018-03-20T21:16:48+00:00">
+					March 20, 2018 at 9:16 pm					</time></a>
+									</div><!-- .comment-meta .commentmetadata -->
+			</footer>
+
+			<div class="comment-content"><p>Thank you for the good writeup. It if truth be told<br>
+was a enjoyment account it. Glance complex to more brought<br>
+agreeable from you! However, how can we keep in touch?</p>
+</div>
+			<div class="reply"><a rel="nofollow" class="comment-reply-link" href="https://importgeek.wordpress.com/2016/08/27/install-and-configure-opencv-in-code-blocks/?replytocom=1562#respond" onclick="return addComment.moveForm( &quot;comment-1562&quot;, &quot;1562&quot;, &quot;respond&quot;, &quot;1211&quot; )" aria-label="Reply to Hero Hunters hack">Reply</a></div>		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+		</ol><!-- .comment-list -->
+
+		
+	
+	
+		<div id="respond" class="comment-respond js">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="https://importgeek.wordpress.com/2016/08/27/install-and-configure-opencv-in-code-blocks/#respond" style="display:none;">Cancel reply</a></small></h3>			<form action="https://importgeek.wordpress.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+				<input type="hidden" id="highlander_comment_nonce" name="highlander_comment_nonce" value="a449f1eb8b"><input type="hidden" name="_wp_http_referer" value="/2016/08/27/install-and-configure-opencv-in-code-blocks/">
+<input type="hidden" name="hc_post_as" id="hc_post_as" value="guest">
+
+<div class="comment-form-field comment-textarea">
+	
+	<div id="comment-form-comment"><textarea tabindex="-1" style="position: absolute; top: -999px; left: 0px; right: auto; bottom: auto; border: 0px; padding: 0px; box-sizing: content-box; overflow-wrap: break-word; overflow: hidden; transition: none 0s ease 0s; height: 0px !important; min-height: 0px !important; font-family: Bitter, sans-serif; font-size: 14px; font-weight: 400; font-style: normal; letter-spacing: 0px; text-transform: none; text-decoration: none solid rgba(0, 0, 0, 0.7); word-spacing: 0px; text-indent: 0px; line-height: 24.5px; width: 858px;" class="autosizejs "></textarea><textarea id="comment" name="comment" title="Enter your comment here..." placeholder="Enter your comment here..." style="height: 44px; overflow: hidden; overflow-wrap: break-word; resize: none;"></textarea></div>
+</div>
+
+<div id="comment-form-identity" style="display: none;">
+	<div id="comment-form-nascar">
+		<p>Fill in your details below or click an icon to log in:</p>
+		<ul>
+			<li class="selected" style="display:none;">
+				<a href="https://importgeek.wordpress.com/2016/08/27/install-and-configure-opencv-in-code-blocks/#comment-form-guest" id="postas-guest" class="nascar-signin-link" title="Login via Guest">
+									</a>
+			</li>
+			<li>
+				<a href="https://importgeek.wordpress.com/2016/08/27/install-and-configure-opencv-in-code-blocks/#comment-form-load-service:WordPress.com" id="postas-wordpress" class="nascar-signin-link" title="Login via WordPress.com">
+					<svg xmlns="http://www.w3.org/2000/svg" role="presentation" viewBox="0 0 24 24"><rect x="0" fill="none" width="24" height="24"></rect><g><path fill="#0087be" d="M12.158 12.786l-2.698 7.84c.806.236 1.657.365 2.54.365 1.047 0 2.05-.18 2.986-.51-.024-.037-.046-.078-.065-.123l-2.762-7.57zM3.008 12c0 3.56 2.07 6.634 5.068 8.092L3.788 8.342c-.5 1.117-.78 2.354-.78 3.658zm15.06-.454c0-1.112-.398-1.88-.74-2.48-.456-.74-.883-1.368-.883-2.11 0-.825.627-1.595 1.51-1.595.04 0 .078.006.116.008-1.598-1.464-3.73-2.36-6.07-2.36-3.14 0-5.904 1.613-7.512 4.053.21.008.41.012.58.012.94 0 2.395-.114 2.395-.114.484-.028.54.684.057.74 0 0-.487.058-1.03.086l3.275 9.74 1.968-5.902-1.4-3.838c-.485-.028-.944-.085-.944-.085-.486-.03-.43-.77.056-.742 0 0 1.484.114 2.368.114.94 0 2.397-.114 2.397-.114.486-.028.543.684.058.74 0 0-.488.058-1.03.086l3.25 9.665.897-2.997c.456-1.17.684-2.137.684-2.907zm1.82-3.86c.04.286.06.593.06.924 0 .912-.17 1.938-.683 3.22l-2.746 7.94c2.672-1.558 4.47-4.454 4.47-7.77 0-1.564-.4-3.033-1.1-4.314zM12 22C6.486 22 2 17.514 2 12S6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"></path></g></svg>				</a>
+			</li>
+			<li>
+			<iframe id="googleplus-sign-in" name="googleplus-sign-in" src="./Install and Configure OpenCV in Code Blocks _ HalfaGeek_files/saved_resource(23).html" width="24" height="24" scrolling="no" allowtransparency="true" seamless="seamless" frameborder="0"></iframe>
+			</li>
+			<li>
+				<a href="https://importgeek.wordpress.com/2016/08/27/install-and-configure-opencv-in-code-blocks/#comment-form-load-service:Twitter" id="postas-twitter" class="nascar-signin-link" title="Login via Twitter">
+					<svg xmlns="http://www.w3.org/2000/svg" role="presentation" viewBox="0 0 24 24"><rect x="0" fill="none" width="24" height="24"></rect><g><path fill="#1DA1F2" d="M22.23 5.924c-.736.326-1.527.547-2.357.646.847-.508 1.498-1.312 1.804-2.27-.793.47-1.67.812-2.606.996C18.325 4.498 17.258 4 16.078 4c-2.266 0-4.103 1.837-4.103 4.103 0 .322.036.635.106.935-3.41-.17-6.433-1.804-8.457-4.287-.353.607-.556 1.312-.556 2.064 0 1.424.724 2.68 1.825 3.415-.673-.022-1.305-.207-1.86-.514v.052c0 1.988 1.415 3.647 3.293 4.023-.344.095-.707.145-1.08.145-.265 0-.522-.026-.773-.074.522 1.63 2.038 2.817 3.833 2.85-1.404 1.1-3.174 1.757-5.096 1.757-.332 0-.66-.02-.98-.057 1.816 1.164 3.973 1.843 6.29 1.843 7.547 0 11.675-6.252 11.675-11.675 0-.178-.004-.355-.012-.53.802-.578 1.497-1.3 2.047-2.124z"></path></g></svg>				</a>
+			</li>
+			<li>
+				<a href="https://importgeek.wordpress.com/2016/08/27/install-and-configure-opencv-in-code-blocks/#comment-form-load-service:Facebook" id="postas-facebook" class="nascar-signin-link" title="Login via Facebook">
+					<svg xmlns="http://www.w3.org/2000/svg" role="presentation" viewBox="0 0 24 24"><rect x="0" fill="none" width="24" height="24"></rect><g><path fill="#3B5998" d="M20.007 3H3.993C3.445 3 3 3.445 3 3.993v16.013c0 .55.445.994.993.994h8.62v-6.97H10.27V11.31h2.346V9.31c0-2.325 1.42-3.59 3.494-3.59.993 0 1.847.073 2.096.106v2.43h-1.438c-1.128 0-1.346.537-1.346 1.324v1.734h2.69l-.35 2.717h-2.34V21h4.587c.548 0 .993-.445.993-.993V3.993c0-.548-.445-.993-.993-.993z"></path></g></svg>				</a>
+			</li>
+		</ul>
+	</div>
+
+	<div id="comment-form-guest" class="comment-form-service selected">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+<a href="https://gravatar.com/site/signup/" target="_blank">				<img src="./Install and Configure OpenCV in Code Blocks _ HalfaGeek_files/ad516503a11cd5ca435acc9bb6523536" alt="Gravatar" width="25" class="no-grav">
+</a>			</div>
+
+				<div class="comment-form-fields">
+				<div class="comment-form-field comment-form-email">
+					<label for="email">Email <span class="required">(required)</span> <span class="nopublish">(Address never made public)</span></label>
+					<div class="comment-form-input"><input id="email" name="email" type="email" value=""></div>
+				</div>
+				<div class="comment-form-field comment-form-author">
+					<label for="author">Name <span class="required">(required)</span></label>
+					<div class="comment-form-input"><input id="author" name="author" type="text" value=""></div>
+				</div>
+				<div class="comment-form-field comment-form-url">
+					<label for="url">Website</label>
+					<div class="comment-form-input"><input id="url" name="url" type="url" value=""></div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+	<div id="comment-form-wordpress" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="./Install and Configure OpenCV in Code Blocks _ HalfaGeek_files/ad516503a11cd5ca435acc9bb6523536" alt="WordPress.com Logo" width="25" class="no-grav">
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="wp_avatar" id="wordpress-avatar" class="comment-meta-wordpress" value="">
+				<input type="hidden" name="wp_user_id" id="wordpress-user_id" class="comment-meta-wordpress" value="">
+				<input type="hidden" name="wp_access_token" id="wordpress-access_token" class="comment-meta-wordpress" value="">
+						<p class="comment-form-posting-as pa-wordpress">
+			<strong></strong>
+			You are commenting using your <span class="skimlinks-unlinked">WordPress.com</span> account.			<span class="comment-form-log-out">
+				(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( &#39;wordpress&#39; );">Log&nbsp;Out</a>&nbsp;/&nbsp;
+				<a href="https://importgeek.wordpress.com/2016/08/27/install-and-configure-opencv-in-code-blocks/#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)
+			</span>
+			<span class="pa-icon"><svg xmlns="http://www.w3.org/2000/svg" role="presentation" viewBox="0 0 24 24"><rect x="0" fill="none" width="24" height="24"></rect><g><path fill="#0087be" d="M12.158 12.786l-2.698 7.84c.806.236 1.657.365 2.54.365 1.047 0 2.05-.18 2.986-.51-.024-.037-.046-.078-.065-.123l-2.762-7.57zM3.008 12c0 3.56 2.07 6.634 5.068 8.092L3.788 8.342c-.5 1.117-.78 2.354-.78 3.658zm15.06-.454c0-1.112-.398-1.88-.74-2.48-.456-.74-.883-1.368-.883-2.11 0-.825.627-1.595 1.51-1.595.04 0 .078.006.116.008-1.598-1.464-3.73-2.36-6.07-2.36-3.14 0-5.904 1.613-7.512 4.053.21.008.41.012.58.012.94 0 2.395-.114 2.395-.114.484-.028.54.684.057.74 0 0-.487.058-1.03.086l3.275 9.74 1.968-5.902-1.4-3.838c-.485-.028-.944-.085-.944-.085-.486-.03-.43-.77.056-.742 0 0 1.484.114 2.368.114.94 0 2.397-.114 2.397-.114.486-.028.543.684.058.74 0 0-.488.058-1.03.086l3.25 9.665.897-2.997c.456-1.17.684-2.137.684-2.907zm1.82-3.86c.04.286.06.593.06.924 0 .912-.17 1.938-.683 3.22l-2.746 7.94c2.672-1.558 4.47-4.454 4.47-7.77 0-1.564-.4-3.033-1.1-4.314zM12 22C6.486 22 2 17.514 2 12S6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"></path></g></svg></span>
+		</p>
+					</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-googleplus" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="./Install and Configure OpenCV in Code Blocks _ HalfaGeek_files/ad516503a11cd5ca435acc9bb6523536" alt="Google+ photo" width="25" class="no-grav">
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="googleplus_avatar" id="googleplus-avatar" class="comment-meta-googleplus" value="">
+				<input type="hidden" name="googleplus_user_id" id="googleplus-user_id" class="comment-meta-googleplus" value="">
+				<input type="hidden" name="googleplus_access_token" id="googleplus-access_token" class="comment-meta-googleplus" value="">
+						<p class="comment-form-posting-as pa-googleplus">
+			<strong></strong>
+			You are commenting using your Google+ account.			<span class="comment-form-log-out">
+				(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( &#39;googleplus&#39; );">Log&nbsp;Out</a>&nbsp;/&nbsp;
+				<a href="https://importgeek.wordpress.com/2016/08/27/install-and-configure-opencv-in-code-blocks/#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)
+			</span>
+			<span class="pa-icon"><svg xmlns="http://www.w3.org/2000/svg" role="presentation" x="0px" y="0px" viewBox="0 0 60 60"><path fill="#519bf7" d="M56.3,30c0,-1.6 -0.2,-3.4 -0.6,-5h-3.1H42.2H30v10.6h14.8C44,39.3 42,42 39.1,43.9l8.8,6.8C53,46 56.3,39 56.3,30z"></path><path fill="#3db366" d="M30,57.5c6.7,0 13.1,-2.4 17.9,-6.8l-8.8,-6.8c-2.5,1.6 -5.6,2.4 -9.1,2.4c-7.2,0 -13.3,-4.7 -15.4,-11.2l-9.3,7.1C9.8,51.3 19.1,57.5 30,57.5z"></path><path fill="#fdc600" d="M5.3,42.2l9.3,-7.1c-0.5,-1.6 -0.8,-3.3 -0.8,-5.1s0.3,-3.5 0.8,-5.1l-9.3,-7.1C3.5,21.5 2.5,25.6 2.5,30S3.5,38.5 5.3,42.2z"></path><path fill="#f15b44" d="M40.1,17.4l8,-8C43.3,5.1 37,2.5 30,2.5C19.1,2.5 9.8,8.7 5.3,17.8l9.3,7.1c2.1,-6.5 8.2,-11.1 15.4,-11.1C33.9,13.7 37.4,15.1 40.1,17.4z"></path></svg></span>
+		</p>
+					</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-twitter" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="./Install and Configure OpenCV in Code Blocks _ HalfaGeek_files/ad516503a11cd5ca435acc9bb6523536" alt="Twitter picture" width="25" class="no-grav">
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="twitter_avatar" id="twitter-avatar" class="comment-meta-twitter" value="">
+				<input type="hidden" name="twitter_user_id" id="twitter-user_id" class="comment-meta-twitter" value="">
+				<input type="hidden" name="twitter_access_token" id="twitter-access_token" class="comment-meta-twitter" value="">
+						<p class="comment-form-posting-as pa-twitter">
+			<strong></strong>
+			You are commenting using your Twitter account.			<span class="comment-form-log-out">
+				(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( &#39;twitter&#39; );">Log&nbsp;Out</a>&nbsp;/&nbsp;
+				<a href="https://importgeek.wordpress.com/2016/08/27/install-and-configure-opencv-in-code-blocks/#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)
+			</span>
+			<span class="pa-icon"><svg xmlns="http://www.w3.org/2000/svg" role="presentation" viewBox="0 0 24 24"><rect x="0" fill="none" width="24" height="24"></rect><g><path fill="#1DA1F2" d="M22.23 5.924c-.736.326-1.527.547-2.357.646.847-.508 1.498-1.312 1.804-2.27-.793.47-1.67.812-2.606.996C18.325 4.498 17.258 4 16.078 4c-2.266 0-4.103 1.837-4.103 4.103 0 .322.036.635.106.935-3.41-.17-6.433-1.804-8.457-4.287-.353.607-.556 1.312-.556 2.064 0 1.424.724 2.68 1.825 3.415-.673-.022-1.305-.207-1.86-.514v.052c0 1.988 1.415 3.647 3.293 4.023-.344.095-.707.145-1.08.145-.265 0-.522-.026-.773-.074.522 1.63 2.038 2.817 3.833 2.85-1.404 1.1-3.174 1.757-5.096 1.757-.332 0-.66-.02-.98-.057 1.816 1.164 3.973 1.843 6.29 1.843 7.547 0 11.675-6.252 11.675-11.675 0-.178-.004-.355-.012-.53.802-.578 1.497-1.3 2.047-2.124z"></path></g></svg></span>
+		</p>
+					</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-facebook" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="./Install and Configure OpenCV in Code Blocks _ HalfaGeek_files/ad516503a11cd5ca435acc9bb6523536" alt="Facebook photo" width="25" class="no-grav">
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="fb_avatar" id="facebook-avatar" class="comment-meta-facebook" value="">
+				<input type="hidden" name="fb_user_id" id="facebook-user_id" class="comment-meta-facebook" value="">
+				<input type="hidden" name="fb_access_token" id="facebook-access_token" class="comment-meta-facebook" value="">
+						<p class="comment-form-posting-as pa-facebook">
+			<strong></strong>
+			You are commenting using your Facebook account.			<span class="comment-form-log-out">
+				(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( &#39;facebook&#39; );">Log&nbsp;Out</a>&nbsp;/&nbsp;
+				<a href="https://importgeek.wordpress.com/2016/08/27/install-and-configure-opencv-in-code-blocks/#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)
+			</span>
+			<span class="pa-icon"><svg xmlns="http://www.w3.org/2000/svg" role="presentation" viewBox="0 0 24 24"><rect x="0" fill="none" width="24" height="24"></rect><g><path fill="#3B5998" d="M20.007 3H3.993C3.445 3 3 3.445 3 3.993v16.013c0 .55.445.994.993.994h8.62v-6.97H10.27V11.31h2.346V9.31c0-2.325 1.42-3.59 3.494-3.59.993 0 1.847.073 2.096.106v2.43h-1.438c-1.128 0-1.346.537-1.346 1.324v1.734h2.69l-.35 2.717h-2.34V21h4.587c.548 0 .993-.445.993-.993V3.993c0-.548-.445-.993-.993-.993z"></path></g></svg></span>
+		</p>
+					</div>
+	
+		</div>
+	</div>
+
+
+	<div id="comment-form-load-service" class="comment-form-service">
+		<div class="comment-form-posting-as-cancel"><a href="javascript:HighlanderComments.cancelExternalWindow();">Cancel</a></div>
+		<p>Connecting to %s</p>
+	</div>
+
+</div>
+
+<script type="text/javascript">
+var highlander_expando_javascript = function(){
+	var input = document.createElement( 'input' ),
+	    comment = jQuery( '#comment' );
+
+	if ( 'placeholder' in input ) {
+		comment.attr( 'placeholder', jQuery( '.comment-textarea label' ).remove().text() );
+	}
+
+	// Expando Mode: start small, then auto-resize on first click + text length
+	jQuery( '#comment-form-identity' ).hide();
+	jQuery( '#comment-form-subscribe' ).hide();
+	jQuery( '#commentform .form-submit' ).hide();
+
+	comment.css( { 'height':'10px' } ).one( 'focus', function() {
+		var timer = setInterval( HighlanderComments.resizeCallback, 10 )
+		jQuery( this ).animate( { 'height': HighlanderComments.initialHeight } ).delay( 100 ).queue( function(n) { clearInterval( timer ); HighlanderComments.resizeCallback(); n(); } );
+		jQuery( '#comment-form-identity' ).slideDown();
+		jQuery( '#comment-form-subscribe' ).slideDown();
+		jQuery( '#commentform .form-submit' ).slideDown();
+	});
+}
+jQuery(document).ready( highlander_expando_javascript );
+</script>
+
+<div id="comment-form-subscribe" style="display: none;">
+	<p class="comment-subscription-form"><input type="checkbox" name="subscribe" id="subscribe" value="subscribe" style="width: auto;"> <label class="subscribe-label" id="subscribe-label" for="subscribe" style="display: inline;">Notify me of new comments via email.</label></p></div>
+
+
+
+
+<p class="form-submit" style="display: none;"><input name="submit" type="submit" id="comment-submit" class="submit" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="1211" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="754cdfbb70"></p>
+<input type="hidden" name="genseq" value="1547431206">
+<p style="display: none;"></p>			<input type="hidden" id="ak_js" name="ak_js" value="1547431208196"></form>
+			</div><!-- #respond -->
+	<div style="clear: both"></div>
+</div><!-- #comments -->
+
+		
+		</div><!-- #content -->
+	</div><!-- #primary -->
+
+	<div id="secondary" class="widget-area" role="complementary">
+				<aside id="search-3" class="widget widget_search"><h1 class="widget-title">/search</h1><form method="get" id="searchform" class="searchform" action="https://importgeek.wordpress.com/" role="search">
+	<label for="s" class="screen-reader-text">Search</label>
+	<input type="search" class="field" name="s" value="" id="s" placeholder="Search …">
+	<input type="submit" class="submit" id="searchsubmit" value="Search">
+</form></aside>		<aside id="recent-posts-3" class="widget widget_recent_entries">		<h1 class="widget-title">/recent_post</h1>		<ul>
+											<li>
+					<a href="https://importgeek.wordpress.com/2018/07/17/module-qtquick-controls-is-not-installed/">module “QtQuick.Controls” is not&nbsp;installed</a>
+									</li>
+											<li>
+					<a href="https://importgeek.wordpress.com/2018/04/07/weston-wayland-tips-and-tricks/">Weston Wayland Tips and&nbsp;Tricks</a>
+									</li>
+											<li>
+					<a href="https://importgeek.wordpress.com/2018/02/12/disabling-linux-serial-console-on-embedded-development-boards/">Disabling Linux serial console on Embedded Development&nbsp;Boards</a>
+									</li>
+											<li>
+					<a href="https://importgeek.wordpress.com/2017/09/11/raspberry-pi-spi-loopback-testing/">Raspberry Pi SPI Loopback&nbsp;Testing</a>
+									</li>
+											<li>
+					<a href="https://importgeek.wordpress.com/2017/08/27/enabling-spi-on-raspberry-pi/">Enabling SPI on Raspberry&nbsp;Pi</a>
+									</li>
+					</ul>
+		</aside><aside id="wp_tag_cloud-2" class="widget wp_widget_tag_cloud"><h1 class="widget-title">/tag_cloud</h1><div style="overflow:hidden"><a href="https://importgeek.wordpress.com/tag/access-contol-lists/" class="tag-cloud-link tag-link-126800721 tag-link-position-1" style="font-size: 9.5849056603774pt;" aria-label="Access contol lists (2 items)">Access contol lists</a>
+<a href="https://importgeek.wordpress.com/tag/acl/" class="tag-cloud-link tag-link-37196 tag-link-position-2" style="font-size: 9.5849056603774pt;" aria-label="ACL (2 items)">ACL</a>
+<a href="https://importgeek.wordpress.com/tag/apache-2/" class="tag-cloud-link tag-link-2505842 tag-link-position-3" style="font-size: 12.22641509434pt;" aria-label="apache (5 items)">apache</a>
+<a href="https://importgeek.wordpress.com/tag/arduino/" class="tag-cloud-link tag-link-134289 tag-link-position-4" style="font-size: 12.22641509434pt;" aria-label="Arduino (5 items)">Arduino</a>
+<a href="https://importgeek.wordpress.com/tag/arm-cortex-m3/" class="tag-cloud-link tag-link-18326182 tag-link-position-5" style="font-size: 10.641509433962pt;" aria-label="Arm Cortex M3 (3 items)">Arm Cortex M3</a>
+<a href="https://importgeek.wordpress.com/tag/avr-gcc/" class="tag-cloud-link tag-link-14476849 tag-link-position-6" style="font-size: 10.641509433962pt;" aria-label="avr-gcc (3 items)">avr-gcc</a>
+<a href="https://importgeek.wordpress.com/tag/avrdude/" class="tag-cloud-link tag-link-13320458 tag-link-position-7" style="font-size: 11.522012578616pt;" aria-label="avrdude (4 items)">avrdude</a>
+<a href="https://importgeek.wordpress.com/tag/avr-programming/" class="tag-cloud-link tag-link-14602646 tag-link-position-8" style="font-size: 9.5849056603774pt;" aria-label="Avr Programming (2 items)">Avr Programming</a>
+<a href="https://importgeek.wordpress.com/tag/bash/" class="tag-cloud-link tag-link-2674 tag-link-position-9" style="font-size: 9.5849056603774pt;" aria-label="Bash (2 items)">Bash</a>
+<a href="https://importgeek.wordpress.com/tag/brasero/" class="tag-cloud-link tag-link-491387 tag-link-position-10" style="font-size: 8pt;" aria-label="brasero (1 item)">brasero</a>
+<a href="https://importgeek.wordpress.com/tag/ccs/" class="tag-cloud-link tag-link-164980 tag-link-position-11" style="font-size: 9.5849056603774pt;" aria-label="CCS (2 items)">CCS</a>
+<a href="https://importgeek.wordpress.com/tag/chibios/" class="tag-cloud-link tag-link-71003279 tag-link-position-12" style="font-size: 10.641509433962pt;" aria-label="ChibiOS (3 items)">ChibiOS</a>
+<a href="https://importgeek.wordpress.com/tag/compiz-fusion/" class="tag-cloud-link tag-link-1305751 tag-link-position-13" style="font-size: 9.5849056603774pt;" aria-label="Compiz Fusion (2 items)">Compiz Fusion</a>
+<a href="https://importgeek.wordpress.com/tag/c-program/" class="tag-cloud-link tag-link-376633 tag-link-position-14" style="font-size: 9.5849056603774pt;" aria-label="c program (2 items)">c program</a>
+<a href="https://importgeek.wordpress.com/tag/cross-compilation/" class="tag-cloud-link tag-link-2769497 tag-link-position-15" style="font-size: 9.5849056603774pt;" aria-label="cross compilation (2 items)">cross compilation</a>
+<a href="https://importgeek.wordpress.com/tag/custom-distro/" class="tag-cloud-link tag-link-55075138 tag-link-position-16" style="font-size: 8pt;" aria-label="Custom distro (1 item)">Custom distro</a>
+<a href="https://importgeek.wordpress.com/tag/debian/" class="tag-cloud-link tag-link-428 tag-link-position-17" style="font-size: 14.51572327044pt;" aria-label="Debian (10 items)">Debian</a>
+<a href="https://importgeek.wordpress.com/tag/debian-squeeze/" class="tag-cloud-link tag-link-10940734 tag-link-position-18" style="font-size: 17.685534591195pt;" aria-label="Debian Squeeze (24 items)">Debian Squeeze</a>
+<a href="https://importgeek.wordpress.com/tag/embedded-linux/" class="tag-cloud-link tag-link-114929 tag-link-position-19" style="font-size: 18.654088050314pt;" aria-label="Embedded Linux (31 items)">Embedded Linux</a>
+<a href="https://importgeek.wordpress.com/tag/embedded-systems/" class="tag-cloud-link tag-link-30181 tag-link-position-20" style="font-size: 17.77358490566pt;" aria-label="Embedded systems (25 items)">Embedded systems</a>
+<a href="https://importgeek.wordpress.com/tag/error-message/" class="tag-cloud-link tag-link-676976 tag-link-position-21" style="font-size: 11.522012578616pt;" aria-label="error message (4 items)">error message</a>
+<a href="https://importgeek.wordpress.com/tag/ethernet/" class="tag-cloud-link tag-link-111179 tag-link-position-22" style="font-size: 8pt;" aria-label="ethernet (1 item)">ethernet</a>
+<a href="https://importgeek.wordpress.com/tag/external-switch/" class="tag-cloud-link tag-link-82413457 tag-link-position-23" style="font-size: 9.5849056603774pt;" aria-label="external switch (2 items)">external switch</a>
+<a href="https://importgeek.wordpress.com/tag/flash/" class="tag-cloud-link tag-link-456 tag-link-position-24" style="font-size: 8pt;" aria-label="Flash (1 item)">Flash</a>
+<a href="https://importgeek.wordpress.com/tag/freescale/" class="tag-cloud-link tag-link-2544239 tag-link-position-25" style="font-size: 10.641509433962pt;" aria-label="freescale (3 items)">freescale</a>
+<a href="https://importgeek.wordpress.com/tag/friendlyarm-2/" class="tag-cloud-link tag-link-82334902 tag-link-position-26" style="font-size: 11.522012578616pt;" aria-label="FriendlyARM (4 items)">FriendlyARM</a>
+<a href="https://importgeek.wordpress.com/tag/gpio-programming/" class="tag-cloud-link tag-link-115241342 tag-link-position-27" style="font-size: 10.641509433962pt;" aria-label="GPIO Programming (3 items)">GPIO Programming</a>
+<a href="https://importgeek.wordpress.com/tag/grub/" class="tag-cloud-link tag-link-23521 tag-link-position-28" style="font-size: 9.5849056603774pt;" aria-label="Grub (2 items)">Grub</a>
+<a href="https://importgeek.wordpress.com/tag/hello-world/" class="tag-cloud-link tag-link-15080 tag-link-position-29" style="font-size: 9.5849056603774pt;" aria-label="hello world (2 items)">hello world</a>
+<a href="https://importgeek.wordpress.com/tag/heroku/" class="tag-cloud-link tag-link-4977067 tag-link-position-30" style="font-size: 9.5849056603774pt;" aria-label="Heroku (2 items)">Heroku</a>
+<a href="https://importgeek.wordpress.com/tag/how-to-configure/" class="tag-cloud-link tag-link-16157748 tag-link-position-31" style="font-size: 9.5849056603774pt;" aria-label="how to configure (2 items)">how to configure</a>
+<a href="https://importgeek.wordpress.com/tag/http_access/" class="tag-cloud-link tag-link-21281070 tag-link-position-32" style="font-size: 9.5849056603774pt;" aria-label="http_access (2 items)">http_access</a>
+<a href="https://importgeek.wordpress.com/tag/i-mx28/" class="tag-cloud-link tag-link-58027260 tag-link-position-33" style="font-size: 10.641509433962pt;" aria-label="i.MX28 (3 items)">i.MX28</a>
+<a href="https://importgeek.wordpress.com/tag/ieee/" class="tag-cloud-link tag-link-34476 tag-link-position-34" style="font-size: 9.5849056603774pt;" aria-label="IEEE (2 items)">IEEE</a>
+<a href="https://importgeek.wordpress.com/tag/ir-remote/" class="tag-cloud-link tag-link-6849285 tag-link-position-35" style="font-size: 9.5849056603774pt;" aria-label="IR remote (2 items)">IR remote</a>
+<a href="https://importgeek.wordpress.com/tag/kernel/" class="tag-cloud-link tag-link-2428 tag-link-position-36" style="font-size: 9.5849056603774pt;" aria-label="kernel (2 items)">kernel</a>
+<a href="https://importgeek.wordpress.com/tag/kernel-version/" class="tag-cloud-link tag-link-3008410 tag-link-position-37" style="font-size: 9.5849056603774pt;" aria-label="kernel version (2 items)">kernel version</a>
+<a href="https://importgeek.wordpress.com/tag/latex/" class="tag-cloud-link tag-link-8800 tag-link-position-38" style="font-size: 10.641509433962pt;" aria-label="Latex (3 items)">Latex</a>
+<a href="https://importgeek.wordpress.com/tag/libraries-folder/" class="tag-cloud-link tag-link-61582699 tag-link-position-39" style="font-size: 9.5849056603774pt;" aria-label="libraries folder (2 items)">libraries folder</a>
+<a href="https://importgeek.wordpress.com/tag/linux/" class="tag-cloud-link tag-link-610 tag-link-position-40" style="font-size: 9.5849056603774pt;" aria-label="linux (2 items)">linux</a>
+<a href="https://importgeek.wordpress.com/tag/ltib/" class="tag-cloud-link tag-link-35563235 tag-link-position-41" style="font-size: 10.641509433962pt;" aria-label="LTIB (3 items)">LTIB</a>
+<a href="https://importgeek.wordpress.com/tag/matplotlib/" class="tag-cloud-link tag-link-2988498 tag-link-position-42" style="font-size: 9.5849056603774pt;" aria-label="Matplotlib (2 items)">Matplotlib</a>
+<a href="https://importgeek.wordpress.com/tag/media-converter/" class="tag-cloud-link tag-link-391219 tag-link-position-43" style="font-size: 9.5849056603774pt;" aria-label="Media Converter (2 items)">Media Converter</a>
+<a href="https://importgeek.wordpress.com/tag/microchip/" class="tag-cloud-link tag-link-468834 tag-link-position-44" style="font-size: 9.5849056603774pt;" aria-label="Microchip (2 items)">Microchip</a>
+<a href="https://importgeek.wordpress.com/tag/mini2440/" class="tag-cloud-link tag-link-20171537 tag-link-position-45" style="font-size: 12.842767295597pt;" aria-label="mini2440 (6 items)">mini2440</a>
+<a href="https://importgeek.wordpress.com/tag/minicom/" class="tag-cloud-link tag-link-917022 tag-link-position-46" style="font-size: 9.5849056603774pt;" aria-label="minicom (2 items)">minicom</a>
+<a href="https://importgeek.wordpress.com/tag/msp430-launchpad/" class="tag-cloud-link tag-link-56945033 tag-link-position-47" style="font-size: 12.22641509434pt;" aria-label="MSP430 Launchpad (5 items)">MSP430 Launchpad</a>
+<a href="https://importgeek.wordpress.com/tag/mspdebug/" class="tag-cloud-link tag-link-40134701 tag-link-position-48" style="font-size: 10.641509433962pt;" aria-label="mspdebug (3 items)">mspdebug</a>
+<a href="https://importgeek.wordpress.com/tag/mspgcc/" class="tag-cloud-link tag-link-6571222 tag-link-position-49" style="font-size: 10.641509433962pt;" aria-label="mspgcc (3 items)">mspgcc</a>
+<a href="https://importgeek.wordpress.com/tag/network/" class="tag-cloud-link tag-link-3385 tag-link-position-50" style="font-size: 8pt;" aria-label="network (1 item)">network</a>
+<a href="https://importgeek.wordpress.com/tag/pal-mode/" class="tag-cloud-link tag-link-115240459 tag-link-position-51" style="font-size: 9.5849056603774pt;" aria-label="pal mode (2 items)">pal mode</a>
+<a href="https://importgeek.wordpress.com/tag/php/" class="tag-cloud-link tag-link-458 tag-link-position-52" style="font-size: 9.5849056603774pt;" aria-label="Php (2 items)">Php</a>
+<a href="https://importgeek.wordpress.com/tag/pic-18f25k80/" class="tag-cloud-link tag-link-369214620 tag-link-position-53" style="font-size: 9.5849056603774pt;" aria-label="PIC 18F25K80 (2 items)">PIC 18F25K80</a>
+<a href="https://importgeek.wordpress.com/tag/pic18xx/" class="tag-cloud-link tag-link-369214619 tag-link-position-54" style="font-size: 9.5849056603774pt;" aria-label="PIC18xx (2 items)">PIC18xx</a>
+<a href="https://importgeek.wordpress.com/tag/pic-midrange/" class="tag-cloud-link tag-link-369215551 tag-link-position-55" style="font-size: 9.5849056603774pt;" aria-label="PIC midrange (2 items)">PIC midrange</a>
+<a href="https://importgeek.wordpress.com/tag/pidgin-2/" class="tag-cloud-link tag-link-35557813 tag-link-position-56" style="font-size: 9.5849056603774pt;" aria-label="pidgin (2 items)">pidgin</a>
+<a href="https://importgeek.wordpress.com/tag/polling/" class="tag-cloud-link tag-link-63719 tag-link-position-57" style="font-size: 10.641509433962pt;" aria-label="polling (3 items)">polling</a>
+<a href="https://importgeek.wordpress.com/tag/processing/" class="tag-cloud-link tag-link-33811 tag-link-position-58" style="font-size: 10.641509433962pt;" aria-label="processing (3 items)">processing</a>
+<a href="https://importgeek.wordpress.com/tag/python/" class="tag-cloud-link tag-link-832 tag-link-position-59" style="font-size: 13.723270440252pt;" aria-label="Python (8 items)">Python</a>
+<a href="https://importgeek.wordpress.com/tag/python-program/" class="tag-cloud-link tag-link-10109333 tag-link-position-60" style="font-size: 9.5849056603774pt;" aria-label="python program (2 items)">python program</a>
+<a href="https://importgeek.wordpress.com/tag/qt-app/" class="tag-cloud-link tag-link-69286322 tag-link-position-61" style="font-size: 9.5849056603774pt;" aria-label="Qt App (2 items)">Qt App</a>
+<a href="https://importgeek.wordpress.com/tag/qtopia/" class="tag-cloud-link tag-link-1669706 tag-link-position-62" style="font-size: 10.641509433962pt;" aria-label="Qtopia (3 items)">Qtopia</a>
+<a href="https://importgeek.wordpress.com/tag/raspberry-pi/" class="tag-cloud-link tag-link-49695267 tag-link-position-63" style="font-size: 11.522012578616pt;" aria-label="Raspberry Pi (4 items)">Raspberry Pi</a>
+<a href="https://importgeek.wordpress.com/tag/reliance-netconnect/" class="tag-cloud-link tag-link-10232597 tag-link-position-64" style="font-size: 9.5849056603774pt;" aria-label="Reliance netconnect (2 items)">Reliance netconnect</a>
+<a href="https://importgeek.wordpress.com/tag/rtos/" class="tag-cloud-link tag-link-22693 tag-link-position-65" style="font-size: 10.641509433962pt;" aria-label="RTOS (3 items)">RTOS</a>
+<a href="https://importgeek.wordpress.com/tag/ruby/" class="tag-cloud-link tag-link-4872 tag-link-position-66" style="font-size: 9.5849056603774pt;" aria-label="Ruby (2 items)">Ruby</a>
+<a href="https://importgeek.wordpress.com/tag/sim-900/" class="tag-cloud-link tag-link-408015542 tag-link-position-67" style="font-size: 9.5849056603774pt;" aria-label="SIM 900 (2 items)">SIM 900</a>
+<a href="https://importgeek.wordpress.com/tag/spi/" class="tag-cloud-link tag-link-402202 tag-link-position-68" style="font-size: 9.5849056603774pt;" aria-label="SPI (2 items)">SPI</a>
+<a href="https://importgeek.wordpress.com/tag/squid3-2/" class="tag-cloud-link tag-link-126201441 tag-link-position-69" style="font-size: 12.22641509434pt;" aria-label="Squid3 (5 items)">Squid3</a>
+<a href="https://importgeek.wordpress.com/tag/stm32f4discovery/" class="tag-cloud-link tag-link-76165497 tag-link-position-70" style="font-size: 12.842767295597pt;" aria-label="STM32F4Discovery (6 items)">STM32F4Discovery</a>
+<a href="https://importgeek.wordpress.com/tag/sudo-2/" class="tag-cloud-link tag-link-35989691 tag-link-position-71" style="font-size: 8pt;" aria-label="sudo (1 item)">sudo</a>
+<a href="https://importgeek.wordpress.com/tag/system-administartion/" class="tag-cloud-link tag-link-137392 tag-link-position-72" style="font-size: 17.949685534591pt;" aria-label="system administartion (26 items)">system administartion</a>
+<a href="https://importgeek.wordpress.com/tag/ubuntu/" class="tag-cloud-link tag-link-255 tag-link-position-73" style="font-size: 22pt;" aria-label="Ubuntu (76 items)">Ubuntu</a>
+<a href="https://importgeek.wordpress.com/tag/wvdial/" class="tag-cloud-link tag-link-2347323 tag-link-position-74" style="font-size: 10.641509433962pt;" aria-label="wvdial (3 items)">wvdial</a>
+<a href="https://importgeek.wordpress.com/tag/zoom/" class="tag-cloud-link tag-link-24605 tag-link-position-75" style="font-size: 8pt;" aria-label="zoom (1 item)">zoom</a></div></aside><aside id="archives-3" class="widget widget_archive"><h1 class="widget-title">/archive</h1>		<ul>
+				<li><a href="https://importgeek.wordpress.com/2018/07/">July 2018</a>&nbsp;(1)</li>
+	<li><a href="https://importgeek.wordpress.com/2018/04/">April 2018</a>&nbsp;(1)</li>
+	<li><a href="https://importgeek.wordpress.com/2018/02/">February 2018</a>&nbsp;(1)</li>
+	<li><a href="https://importgeek.wordpress.com/2017/09/">September 2017</a>&nbsp;(1)</li>
+	<li><a href="https://importgeek.wordpress.com/2017/08/">August 2017</a>&nbsp;(1)</li>
+	<li><a href="https://importgeek.wordpress.com/2017/02/">February 2017</a>&nbsp;(1)</li>
+	<li><a href="https://importgeek.wordpress.com/2017/01/">January 2017</a>&nbsp;(1)</li>
+	<li><a href="https://importgeek.wordpress.com/2016/10/">October 2016</a>&nbsp;(1)</li>
+	<li><a href="https://importgeek.wordpress.com/2016/08/">August 2016</a>&nbsp;(1)</li>
+	<li><a href="https://importgeek.wordpress.com/2016/07/">July 2016</a>&nbsp;(1)</li>
+	<li><a href="https://importgeek.wordpress.com/2016/06/">June 2016</a>&nbsp;(1)</li>
+	<li><a href="https://importgeek.wordpress.com/2016/04/">April 2016</a>&nbsp;(1)</li>
+	<li><a href="https://importgeek.wordpress.com/2016/02/">February 2016</a>&nbsp;(1)</li>
+	<li><a href="https://importgeek.wordpress.com/2016/01/">January 2016</a>&nbsp;(2)</li>
+	<li><a href="https://importgeek.wordpress.com/2015/12/">December 2015</a>&nbsp;(1)</li>
+	<li><a href="https://importgeek.wordpress.com/2015/11/">November 2015</a>&nbsp;(1)</li>
+	<li><a href="https://importgeek.wordpress.com/2015/09/">September 2015</a>&nbsp;(2)</li>
+	<li><a href="https://importgeek.wordpress.com/2015/08/">August 2015</a>&nbsp;(1)</li>
+	<li><a href="https://importgeek.wordpress.com/2015/07/">July 2015</a>&nbsp;(1)</li>
+	<li><a href="https://importgeek.wordpress.com/2015/06/">June 2015</a>&nbsp;(1)</li>
+	<li><a href="https://importgeek.wordpress.com/2015/03/">March 2015</a>&nbsp;(1)</li>
+	<li><a href="https://importgeek.wordpress.com/2015/01/">January 2015</a>&nbsp;(1)</li>
+	<li><a href="https://importgeek.wordpress.com/2014/11/">November 2014</a>&nbsp;(1)</li>
+	<li><a href="https://importgeek.wordpress.com/2014/10/">October 2014</a>&nbsp;(1)</li>
+	<li><a href="https://importgeek.wordpress.com/2014/08/">August 2014</a>&nbsp;(1)</li>
+	<li><a href="https://importgeek.wordpress.com/2014/07/">July 2014</a>&nbsp;(1)</li>
+	<li><a href="https://importgeek.wordpress.com/2014/06/">June 2014</a>&nbsp;(1)</li>
+	<li><a href="https://importgeek.wordpress.com/2014/05/">May 2014</a>&nbsp;(1)</li>
+	<li><a href="https://importgeek.wordpress.com/2014/03/">March 2014</a>&nbsp;(1)</li>
+	<li><a href="https://importgeek.wordpress.com/2014/02/">February 2014</a>&nbsp;(1)</li>
+	<li><a href="https://importgeek.wordpress.com/2014/01/">January 2014</a>&nbsp;(1)</li>
+	<li><a href="https://importgeek.wordpress.com/2013/12/">December 2013</a>&nbsp;(3)</li>
+	<li><a href="https://importgeek.wordpress.com/2013/11/">November 2013</a>&nbsp;(1)</li>
+	<li><a href="https://importgeek.wordpress.com/2013/10/">October 2013</a>&nbsp;(1)</li>
+	<li><a href="https://importgeek.wordpress.com/2013/09/">September 2013</a>&nbsp;(1)</li>
+	<li><a href="https://importgeek.wordpress.com/2013/07/">July 2013</a>&nbsp;(2)</li>
+	<li><a href="https://importgeek.wordpress.com/2013/06/">June 2013</a>&nbsp;(1)</li>
+	<li><a href="https://importgeek.wordpress.com/2013/05/">May 2013</a>&nbsp;(2)</li>
+	<li><a href="https://importgeek.wordpress.com/2013/04/">April 2013</a>&nbsp;(2)</li>
+	<li><a href="https://importgeek.wordpress.com/2013/03/">March 2013</a>&nbsp;(2)</li>
+	<li><a href="https://importgeek.wordpress.com/2013/02/">February 2013</a>&nbsp;(3)</li>
+	<li><a href="https://importgeek.wordpress.com/2013/01/">January 2013</a>&nbsp;(3)</li>
+	<li><a href="https://importgeek.wordpress.com/2012/12/">December 2012</a>&nbsp;(4)</li>
+	<li><a href="https://importgeek.wordpress.com/2012/11/">November 2012</a>&nbsp;(3)</li>
+	<li><a href="https://importgeek.wordpress.com/2012/10/">October 2012</a>&nbsp;(4)</li>
+	<li><a href="https://importgeek.wordpress.com/2012/09/">September 2012</a>&nbsp;(4)</li>
+	<li><a href="https://importgeek.wordpress.com/2012/08/">August 2012</a>&nbsp;(3)</li>
+	<li><a href="https://importgeek.wordpress.com/2012/07/">July 2012</a>&nbsp;(3)</li>
+	<li><a href="https://importgeek.wordpress.com/2012/06/">June 2012</a>&nbsp;(1)</li>
+	<li><a href="https://importgeek.wordpress.com/2012/05/">May 2012</a>&nbsp;(4)</li>
+	<li><a href="https://importgeek.wordpress.com/2012/04/">April 2012</a>&nbsp;(6)</li>
+	<li><a href="https://importgeek.wordpress.com/2012/03/">March 2012</a>&nbsp;(7)</li>
+	<li><a href="https://importgeek.wordpress.com/2012/02/">February 2012</a>&nbsp;(1)</li>
+	<li><a href="https://importgeek.wordpress.com/2012/01/">January 2012</a>&nbsp;(6)</li>
+	<li><a href="https://importgeek.wordpress.com/2011/12/">December 2011</a>&nbsp;(2)</li>
+	<li><a href="https://importgeek.wordpress.com/2011/10/">October 2011</a>&nbsp;(4)</li>
+	<li><a href="https://importgeek.wordpress.com/2011/09/">September 2011</a>&nbsp;(4)</li>
+	<li><a href="https://importgeek.wordpress.com/2011/08/">August 2011</a>&nbsp;(3)</li>
+	<li><a href="https://importgeek.wordpress.com/2011/04/">April 2011</a>&nbsp;(4)</li>
+	<li><a href="https://importgeek.wordpress.com/2010/12/">December 2010</a>&nbsp;(1)</li>
+	<li><a href="https://importgeek.wordpress.com/2010/09/">September 2010</a>&nbsp;(3)</li>
+	<li><a href="https://importgeek.wordpress.com/2010/08/">August 2010</a>&nbsp;(3)</li>
+	<li><a href="https://importgeek.wordpress.com/2010/05/">May 2010</a>&nbsp;(1)</li>
+	<li><a href="https://importgeek.wordpress.com/2010/04/">April 2010</a>&nbsp;(5)</li>
+	<li><a href="https://importgeek.wordpress.com/2010/03/">March 2010</a>&nbsp;(2)</li>
+	<li><a href="https://importgeek.wordpress.com/2010/01/">January 2010</a>&nbsp;(1)</li>
+	<li><a href="https://importgeek.wordpress.com/2009/12/">December 2009</a>&nbsp;(5)</li>
+	<li><a href="https://importgeek.wordpress.com/2009/11/">November 2009</a>&nbsp;(3)</li>
+	<li><a href="https://importgeek.wordpress.com/2009/03/">March 2009</a>&nbsp;(3)</li>
+		</ul>
+			</aside><aside id="blog-stats-2" class="widget widget_blog-stats"><h1 class="widget-title">/blog_stats</h1>		<ul>
+			<li>297,538 hits</li>
+		</ul>
+		</aside><aside id="blog_subscription-4" class="widget widget_blog_subscription jetpack_subscription_widget"><h1 class="widget-title"><label for="subscribe-field">Follow Blog via Email</label></h1>
+            <form action="https://subscribe.wordpress.com/" method="post" accept-charset="utf-8" id="subscribe-blog">
+									<p>Enter your email address to follow this blog and receive notifications of new posts by email.</p>
+                    <p><input type="text" name="email" style="width: 95%; padding: 1px 2px" placeholder="Enter your email address" value="" id="subscribe-field"></p>
+				
+                <p>
+                    <input type="hidden" name="action" value="subscribe">
+                    <input type="hidden" name="blog_id" value="10794340">
+                    <input type="hidden" name="source" value="https://importgeek.wordpress.com/2016/08/27/install-and-configure-opencv-in-code-blocks/">
+                    <input type="hidden" name="sub-type" value="widget">
+                    <input type="hidden" name="redirect_fragment" value="blog_subscription-4">
+					<input type="hidden" id="_wpnonce" name="_wpnonce" value="75f4a9a19f">                    <input type="submit" value="Sign me up!">
+                </p>
+            </form>
+			
+</aside><aside id="text-3" class="widget widget_text"><h1 class="widget-title">/Stats</h1>			<div class="textwidget"><a href="http://www.clustrmaps.com/map/importgeek.wordpress.com" title="Visitor Map for importgeek.wordpress.com"><img src="./Install and Configure OpenCV in Code Blocks _ HalfaGeek_files/map_v2.png"></a></div>
+		</aside><!-- Invalid Facebook Page URL -->		<div class="wpcnt">
+			<div class="wpa wpwidesky">
+				<span class="wpa-about">Advertisements</span>
+				<div class="u">
+							<div style="padding-bottom:15px;width:160px;height:600px;">
+		<div id="atatags-286348-5c3bed26dcb28"><div style="width: 160px; height: 600px;"><iframe frameborder="0" scrolling="no" width="160" height="600" style="margin:0;border:none;overflow:hidden;width:160px;height:600px;" src="./Install and Configure OpenCV in Code Blocks _ HalfaGeek_files/saved_resource(24).html"></iframe></div><div id="atatags-286348-5c3bed26dcb28__controls" class="ata-controls" style="height:10px;width:160px;"><span id="atatags-286348-5c3bed26dcb28__complain-btn" class="ata-controls__complain-btn" style="display: inline;">Report this ad</span></div></div></div>
+				</div>
+				
+			</div>
+		</div>	</div><!-- #secondary -->
+	</div><!-- #main -->
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="site-info">
+						<a href="https://wordpress.com/?ref=footer_blog">Blog at WordPress.com.</a>
+			
+					</div><!-- .site-info -->
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+<!--  -->
+<script type="text/javascript" src="./Install and Configure OpenCV in Code Blocks _ HalfaGeek_files/gprofiles.js.下載"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Install and Configure OpenCV in Code Blocks _ HalfaGeek_files/wpgroho.js.下載"></script>
+
+	<script>
+		//initialize and attach hovercards to all gravatars
+		jQuery( document ).ready( function( $ ) {
+
+			if (typeof Gravatar === "undefined"){
+				return;
+			}
+
+			if ( typeof Gravatar.init !== "function" ) {
+				return;
+			}			
+
+			Gravatar.profile_cb = function( hash, id ) {
+				WPGroHo.syncProfileData( hash, id );
+			};
+			Gravatar.my_hash = WPGroHo.my_hash;
+			Gravatar.init( 'body', '#wp-admin-bar-my-account' );
+		});
+	</script>
+
+		<div style="display:none">
+	<div class="grofile-hash-map-acbe8a400642de6ae342af65e2bed685">
+	</div>
+	<div class="grofile-hash-map-0e42fc1609fafe73051dd9462b54c23b">
+	</div>
+	<div class="grofile-hash-map-03f432e2aa5878503dba33f7ee41eed2">
+	</div>
+	<div class="grofile-hash-map-e27673acbd53b176c28178ac7996c2c7">
+	</div>
+	<div class="grofile-hash-map-d764a8e295bf5ba0ab43a19cbbb873bf">
+	</div>
+	</div>
+<script type="text/javascript">
+/* <![CDATA[ */
+var HighlanderComments = {"loggingInText":"Logging In\u2026","submittingText":"Posting Comment\u2026","postCommentText":"Post Comment","connectingToText":"Connecting to %s","commentingAsText":"%1$s: You are commenting using your %2$s account.","logoutText":"Log Out","loginText":"Log In","connectURL":"https:\/\/importgeek.wordpress.com\/public.api\/connect\/?action=request","logoutURL":"https:\/\/importgeek.wordpress.com\/wp-login.php?action=logout&_wpnonce=c57a8ea7bb","homeURL":"https:\/\/importgeek.wordpress.com\/","postID":"1211","gravDefault":"identicon","enterACommentError":"Please enter a comment","enterEmailError":"Please enter your email address here","invalidEmailError":"Invalid email address","enterAuthorError":"Please enter your name here","gravatarFromEmail":"This picture will show whenever you leave a comment. Click to customize it.","logInToExternalAccount":"Log in to use details from one of these accounts.","change":"Change","changeAccount":"Change Account","comment_registration":"0","userIsLoggedIn":"","isJetpack":"","text_direction":"ltr"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Install and Configure OpenCV in Code Blocks _ HalfaGeek_files/saved_resource(7)"></script>
+
+	<div id="carousel-reblog-box">
+		<form action="https://importgeek.wordpress.com/2016/08/27/install-and-configure-opencv-in-code-blocks/#" name="carousel-reblog">
+			<textarea id="carousel-reblog-content" name="carousel-reblog-content" placeholder="Add your thoughts here... (optional)"></textarea>
+			<label for="carousel-reblog-to-blog-id" id="carousel-reblog-lblogid">Post to</label>
+			<select name="carousel-reblog-to-blog-id" id="carousel-reblog-to-blog-id">
+						</select>
+
+			<div class="submit">
+				<span class="canceltext"><a href="https://importgeek.wordpress.com/2016/08/27/install-and-configure-opencv-in-code-blocks/#" class="cancel">Cancel</a></span>
+				<input type="submit" name="carousel-reblog-submit" class="button" id="carousel-reblog-submit" value="Reblog Post">
+				<input type="hidden" id="carousel-reblog-blog-id" value="10794340">
+				<input type="hidden" id="carousel-reblog-blog-url" value="https://importgeek.wordpress.com">
+				<input type="hidden" id="carousel-reblog-blog-title" value="HalfaGeek">
+				<input type="hidden" id="carousel-reblog-post-url" value="">
+				<input type="hidden" id="carousel-reblog-post-title" value="">
+			</div>
+
+			<input type="hidden" id="_wpnonce" name="_wpnonce" value="6fa7d2768b"><input type="hidden" name="_wp_http_referer" value="/2016/08/27/install-and-configure-opencv-in-code-blocks/">		</form>
+
+		<div class="arrow"></div>
+	</div>
+<link rel="stylesheet" id="all-css-0-3" href="./Install and Configure OpenCV in Code Blocks _ HalfaGeek_files/jetpack-carousel.css" type="text/css" media="all">
+<!--[if lte IE 8]>
+<link rel='stylesheet' id='jetpack-carousel-ie8fix-css'  href='https://s1.wp.com/wp-content/mu-plugins/carousel/jetpack-carousel-ie8fix.css?m=1412618825h&#038;ver=20121024' type='text/css' media='all' />
+<![endif]-->
+<script type="text/javascript">
+/* <![CDATA[ */
+var jpfbembed = {"appid":"249643311490","locale":"en_US"};
+/* ]]> */
+</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var actionbardata = {"siteID":"10794340","siteName":"HalfaGeek","siteURL":"http:\/\/importgeek.wordpress.com","icon":"<img alt='' src='https:\/\/s2.wp.com\/i\/logo\/wpcom-gray-white.png' class='avatar avatar-50' height='50' width='50' \/>","canManageOptions":"","canCustomizeSite":"","isFollowing":"","themeSlug":"pub\/zoren","signupURL":"https:\/\/wordpress.com\/start\/","loginURL":"https:\/\/importgeek.wordpress.com\/wp-login.php?redirect_to=https%3A%2F%2Fimportgeek.wordpress.com%2F2016%2F08%2F27%2Finstall-and-configure-opencv-in-code-blocks%2F","themeURL":"","xhrURL":"https:\/\/importgeek.wordpress.com\/wp-admin\/admin-ajax.php","nonce":"a7a11a6559","isSingular":"1","isFolded":"","isLoggedIn":"","isMobile":"","subscribeNonce":"<input type=\"hidden\" id=\"_wpnonce\" name=\"_wpnonce\" value=\"75f4a9a19f\" \/>","referer":"https:\/\/importgeek.wordpress.com\/2016\/08\/27\/install-and-configure-opencv-in-code-blocks\/","canFollow":"1","feedID":"505909","statusMessage":"","customizeLink":"https:\/\/importgeek.wordpress.com\/wp-admin\/customize.php?url=https%3A%2F%2Fimportgeek.wordpress.com%2F2016%2F08%2F27%2Finstall-and-configure-opencv-in-code-blocks%2F","postID":"1211","shortlink":"https:\/\/wp.me\/pJi6g-jx","canEditPost":"","editLink":"https:\/\/wordpress.com\/post\/importgeek.wordpress.com\/1211","statsLink":"https:\/\/wordpress.com\/stats\/post\/1211\/importgeek.wordpress.com","i18n":{"view":"View site","follow":"Follow","following":"Following","edit":"Edit","login":"Log in","signup":"Sign up","customize":"Customize","report":"Report this content","themeInfo":"Get theme: Zoren","shortlink":"Copy shortlink","copied":"Copied","followedText":"New posts from this site will now appear in your <a href=\"https:\/\/wordpress.com\/\">Reader<\/a>","foldBar":"Collapse this bar","unfoldBar":"Expand this bar","editSubs":"Manage subscriptions","viewReader":"View site in Reader","viewReadPost":"View post in Reader","subscribe":"Sign me up","enterEmail":"Enter your email address","followers":"Join 32 other followers","alreadyUser":"Already have a WordPress.com account? <a href=\"https:\/\/importgeek.wordpress.com\/wp-login.php?redirect_to=https%3A%2F%2Fimportgeek.wordpress.com%2F2016%2F08%2F27%2Finstall-and-configure-opencv-in-code-blocks%2F\">Log in now.<\/a>","stats":"Stats"}};
+/* ]]> */
+</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var jetpackCarouselStrings = {"widths":[370,700,1000,1200,1400,2000],"is_logged_in":"","lang":"en","ajaxurl":"https:\/\/importgeek.wordpress.com\/wp-admin\/admin-ajax.php","nonce":"dc53f67998","display_exif":"1","display_geo":"1","single_image_gallery":"1","single_image_gallery_media_file":"","background_color":"black","comment":"Comment","post_comment":"Post Comment","write_comment":"Write a Comment...","loading_comments":"Loading Comments...","download_original":"View full size <span class=\"photo-size\">{0}<span class=\"photo-size-times\">\u00d7<\/span>{1}<\/span>","no_comment_text":"Please be sure to submit some text with your comment.","no_comment_email":"Please provide an email address to comment.","no_comment_author":"Please provide your name to comment.","comment_post_error":"Sorry, but there was an error posting your comment. Please try again later.","comment_approved":"Your comment was approved.","comment_unapproved":"Your comment is in moderation.","camera":"Camera","aperture":"Aperture","shutter_speed":"Shutter Speed","focal_length":"Focal Length","copyright":"Copyright","comment_registration":"0","require_name_email":"1","login_url":"https:\/\/importgeek.wordpress.com\/wp-login.php?redirect_to=https%3A%2F%2Fimportgeek.wordpress.com%2F2016%2F08%2F27%2Finstall-and-configure-opencv-in-code-blocks%2F","blog_id":"10794340","meta_data":["camera","aperture","shutter_speed","focal_length","copyright"],"local_comments_commenting_as":"<fieldset><label for=\"email\">Email (Required)<\/label> <input type=\"text\" name=\"email\" class=\"jp-carousel-comment-form-field jp-carousel-comment-form-text-field\" id=\"jp-carousel-comment-form-email-field\" \/><\/fieldset><fieldset><label for=\"author\">Name (Required)<\/label> <input type=\"text\" name=\"author\" class=\"jp-carousel-comment-form-field jp-carousel-comment-form-text-field\" id=\"jp-carousel-comment-form-author-field\" \/><\/fieldset><fieldset><label for=\"url\">Website<\/label> <input type=\"text\" name=\"url\" class=\"jp-carousel-comment-form-field jp-carousel-comment-form-text-field\" id=\"jp-carousel-comment-form-url-field\" \/><\/fieldset>","reblog":"Reblog","reblogged":"Reblogged","reblog_add_thoughts":"Add your thoughts here... (optional)","reblogging":"Reblogging...","post_reblog":"Post Reblog","stats_query_args":"blog=10794340&v=wpcom&tz=0&user_id=0&subd=importgeek","is_public":"1","reblog_enabled":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Install and Configure OpenCV in Code Blocks _ HalfaGeek_files/saved_resource(8)"></script><div class="widget widget_eu_cookie_law_widget" style="display: block;"><div class="hide-on-button ads-active" data-hide-timeout="30" data-consent-expiration="180" id="eu-cookie-law">
+	<form method="post">
+		<input type="submit" value="Close and accept" class="accept">
+
+		Privacy &amp; Cookies: This site uses cookies. By continuing to use this website, you agree to their use. <br>
+To find out more, including how to control cookies, see here:
+		<a href="https://automattic.com/cookies">
+			Cookie Policy		</a>
+ </form>
+</div>
+</div><div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./Install and Configure OpenCV in Code Blocks _ HalfaGeek_files/j-GHT1gpo6-.html" style="border: none;"></iframe></div><div></div></div></div><div id="actionbar" class="actnbr-pub-zoren actnbr-has-follow actnbr-hidden"><ul><li class="actnbr-btn actnbr-hidden"> 			    	<a class="actnbr-action actnbr-actn-follow" href="https://importgeek.wordpress.com/2016/08/27/install-and-configure-opencv-in-code-blocks/"><svg class="gridicon gridicon__follow" height="24px" width="24px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M23 16v2h-3v3h-2v-3h-3v-2h3v-3h2v3h3zM20 2v9h-4v3h-3v4H4c-1.1 0-2-.9-2-2V2h18zM8 13v-1H4v1h4zm3-3H4v1h7v-1zm0-2H4v1h7V8zm7-4H4v2h14V4z"></path></g></svg><span>Follow</span></a> 			    	<div class="actnbr-popover tip tip-top-left actnbr-notice"> 			    		<div class="tip-arrow"></div> 			    		<div class="tip-inner actnbr-follow-bubble"></div> 			    	</div> 			    </li><li class="actnbr-ellipsis actnbr-hidden"> 			  <svg class="gridicon gridicon__ellipsis" height="24" width="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><circle cx="5" cy="12" r="2"></circle><circle cx="19" cy="12" r="2"></circle><circle cx="12" cy="12" r="2"></circle></g></svg> 			  <div class="actnbr-popover tip tip-top-left actnbr-more"> 			  	<div class="tip-arrow"></div> 			  	<div class="tip-inner"> 				  <ul> 				    <li class="actnbr-sitename actnbr-hidden"><a href="http://importgeek.wordpress.com/"><img alt="" src="./Install and Configure OpenCV in Code Blocks _ HalfaGeek_files/wpcom-gray-white.png" class="avatar avatar-50" height="50" width="50"> HalfaGeek</a></li> 				   	<li class="actnbr-folded-customize actnbr-hidden"><a href="https://importgeek.wordpress.com/wp-admin/customize.php?url=https%3A%2F%2Fimportgeek.wordpress.com%2F2016%2F08%2F27%2Finstall-and-configure-opencv-in-code-blocks%2F"><svg class="gridicon gridicon__customize" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M2 6c0-1.505.78-3.08 2-4 0 .845.69 2 2 2 1.657 0 3 1.343 3 3 0 .386-.08.752-.212 1.09.74.594 1.476 1.19 2.19 1.81L8.9 11.98c-.62-.716-1.214-1.454-1.807-2.192C6.753 9.92 6.387 10 6 10c-2.21 0-4-1.79-4-4zm12.152 6.848l1.34-1.34c.607.304 1.283.492 2.008.492 2.485 0 4.5-2.015 4.5-4.5 0-.725-.188-1.4-.493-2.007L18 9l-2-2 3.507-3.507C18.9 3.188 18.225 3 17.5 3 15.015 3 13 5.015 13 7.5c0 .725.188 1.4.493 2.007L3 20l2 2 6.848-6.848c1.885 1.928 3.874 3.753 5.977 5.45l1.425 1.148 1.5-1.5-1.15-1.425c-1.695-2.103-3.52-4.092-5.448-5.977z" data-reactid=".2.1.1:0.1b.0"></path></g></svg><span>Customize<span></span></span></a></li> 				    <li class="actnbr-folded-follow actnbr-hidden"><a class="actnbr-action actnbr-actn-follow" href="https://importgeek.wordpress.com/2016/08/27/install-and-configure-opencv-in-code-blocks/"><svg class="gridicon gridicon__follow" height="24px" width="24px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M23 16v2h-3v3h-2v-3h-3v-2h3v-3h2v3h3zM20 2v9h-4v3h-3v4H4c-1.1 0-2-.9-2-2V2h18zM8 13v-1H4v1h4zm3-3H4v1h7v-1zm0-2H4v1h7V8zm7-4H4v2h14V4z"></path></g></svg><span>Follow</span></a></li> 					<li class="actnbr-signup actnbr-hidden"><a href="https://wordpress.com/start/">Sign up</a></li> 				    <li class="actnbr-login actnbr-hidden"><a href="https://importgeek.wordpress.com/wp-login.php?redirect_to=https%3A%2F%2Fimportgeek.wordpress.com%2F2016%2F08%2F27%2Finstall-and-configure-opencv-in-code-blocks%2F">Log in</a></li> 				     				    <li class="actnbr-shortlink actnbr-hidden"><a href="https://wp.me/pJi6g-jx">Copy shortlink</a></li> 				    <li class="flb-report actnbr-hidden"><a href="http://en.wordpress.com/abuse/">Report this content</a></li> 				     				     				    <li class="actnbr-subs actnbr-hidden"><a href="https://subscribe.wordpress.com/">Manage subscriptions</a></li> 				    <li class="actnbr-fold actnbr-hidden"><a href="https://importgeek.wordpress.com/2016/08/27/install-and-configure-opencv-in-code-blocks/">Collapse this bar</a></li> 			      </ul> 			    </div> 		      </div> 		    </li> 	      </ul></div>
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script>		<iframe src="./Install and Configure OpenCV in Code Blocks _ HalfaGeek_files/master.html" scrolling="no" id="likes-master" name="likes-master" style="display:none;"></iframe>
+		<div id="likes-other-gravatars"><div class="likes-text"><span>%d</span> bloggers like this:</div><ul class="wpl-avatars sd-like-gravatars"></ul></div>
+<script src="./Install and Configure OpenCV in Code Blocks _ HalfaGeek_files/w.js.下載" type="text/javascript" async="" defer=""></script>
+<script type="text/javascript">
+_tkq = window._tkq || [];
+_stq = window._stq || [];
+_tkq.push(['storeContext', {'blog_id':'10794340','blog_tz':'0','user_lang':'en','blog_lang':'en','user_id':'0'}]);
+_stq.push(['view', {'blog':'10794340','v':'wpcom','tz':'0','user_id':'0','post':'1211','subd':'importgeek'}]);
+_stq.push(['extra', {'crypt':'UE5XaGUuOTlwaD85flAmcm1mcmZsaDhkV11YdWFnNncxc1tjZG9XVXhRP2xZSDB1cEtFVS04ZXQ4R3ldPTdkaHJZTHhwazE3K243JWo5N0JXaHNGN344Z3NodzVIUHQscUpSVj8yWzdRckRhQ0ZtWXJvcHB0ZV9dRHk4fCxnNVQ5anBObnJ1UlBWS2U9az0lJV8lWmYvWzFlTXczbywrVGRqbXlyZzEyWE8lMmRLW092Ji1DcmR1aHJiVjZuaTE9QVs1cCVpRlYyMjlpMHxkNTNUNnY3bGVwR1BSSlk0NVR6VnJGZFQ3WHFYZ2hNJlNjLDgzfjFEaCtlfm41a3hQR3lWdEIvdVItPWplbncxJW5raG4yaEl5OHw/UiZtfDMzMVl6MU5WJQ=='}]);
+_stq.push([ 'clickTrackerInit', '10794340', '1211' ]);
+	</script>
+<noscript><img src="https://pixel.wp.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt="" /></noscript>
+<script>
+if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init();
+	var mobileStatsQueryString = "";
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+	
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//pixel.wp.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+	}
+	
+}
+</script>
+
+<img src="./Install and Configure OpenCV in Code Blocks _ HalfaGeek_files/g.gif" alt=":)" id="wpstats"><script src="./Install and Configure OpenCV in Code Blocks _ HalfaGeek_files/725X1342.skimlinks.js.下載"></script><style>
+        @keyframes adtags-move-in {
+            from { top: -100px; }
+            to { top: 0px; }
+        }
+
+        @keyframes adtags-move-out {
+            from { top: 0px; }
+            to { top: -100px; }
+        }
+    </style><div class="adtags-stiky-ad adtags-stiky-ad_opened" touch-action="none" style="height:100px;top:-100px;animation:adtags-move-in .5s ease forwards;">
+        <div id="adtags-1" class="adtags-stiky-ad__slot" style="height:100px;width:728px;"><div style="width: 728px; height: 90px;"><iframe frameborder="0" scrolling="no" width="728" height="90" style="margin:0;border:none;overflow:hidden;width:728px;height:90px;" src="./Install and Configure OpenCV in Code Blocks _ HalfaGeek_files/saved_resource(25).html"></iframe></div><div id="adtags-1__controls" class="ata-controls" style="height:10px;width:728px;"><span id="adtags-1__complain-btn" class="ata-controls__complain-btn" style="display: inline;">Report this ad</span></div></div>
+        <div class="adtags-sticky-ad__swipe-area">
+            <div class="adtags-stiky-ad__control">
+                <div class="adtags-stiky-ad__arrow adtags-stiky-ad__arrow_left"></div>
+                <div class="adtags-stiky-ad__arrow adtags-stiky-ad__arrow_right"></div>
+            </div>
+        </div>
+    </div><img width="0" height="0" src="./Install and Configure OpenCV in Code Blocks _ HalfaGeek_files/auto-user-sync" id="stickyTrackImg28901"></body></html>
